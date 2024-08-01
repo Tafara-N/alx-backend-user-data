@@ -26,17 +26,19 @@ All your functions (inside and outside a class) should have a documentation (pyt
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 All your functions should be type annotated
 Tasks
-0. Regex-ing
-mandatory
-Write a function called filter_datum that returns the log message obfuscated:
+### 0. Regex-ing
 
-Arguments:
-fields: a list of strings representing all fields to obfuscate
-redaction: a string representing by what the field will be obfuscated
-message: a string representing the log line
-separator: a string representing by which character is separating all fields in the log line (message)
-The function should use a regex to replace occurrences of certain field values.
-filter_datum should be less than 5 lines long and use re.sub to perform the substitution with a single regex.
+Write a function called `filter_datum` that returns the log message obfuscated:
+
+- Arguments:
+    - `fields`: a list of strings representing all fields to obfuscate
+    - `redaction`: a string representing by what the field will be obfuscated
+    - `message`: a string representing the log line
+    - `separator`: a string representing by which character is separating all fields in the log line (`message`)
+- The function should use a regex to replace occurrences of certain field values.
+- `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -56,11 +58,12 @@ bob@dylan:~$ ./main.py
 name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
 name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
-File: filtered_logger.py
+File: `filtered_logger.py`
 
 ### 1. Log formatter
 
