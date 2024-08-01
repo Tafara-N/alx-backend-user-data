@@ -70,7 +70,7 @@ def get_logger() -> logging.Logger:
     logger.setLevel(logging.INFO)
     logger.propagate = False
     handler = logging.StreamHandler()
-    handler.setFormatter(RedactingFormatter(PII_FIELDS))
+    handler.setFormatter(RedactingFormatter(PII_FIELDS))  # type: ignore
     logger.addHandler(handler)
     return logger
 
@@ -80,12 +80,21 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
     Function that returns a connector to the database
     """
 
-    return mysql.connector.connect(
-        host=os.getenv("PERSONAL_DATA_DB_HOST", "localhost"),
-        user=os.getenv("PERSONAL_DATA_DB_USERNAME", "root"),
-        password=os.getenv("PERSONAL_DATA_DB_PASSWORD", ""),
-        database=os.getenv("PERSONAL_DATA_DB_NAME"),
+    host = os.getenv("PERSONAL_DATA_DB_HOST", "localhost")
+    user = os.getenv("PERSONAL_DATA_DB_USERNAME", "root")
+    password = os.getenv("PERSONAL_DATA_DB_PASSWORD", "")
+    database = os.getenv("PERSONAL_DATA_DB_NAME")
+
+    connection = mysql.connector.connect(
+        host=host,
+        port=3306,
+        user=user,
+        password=password,
+        database=database
     )
+
+    return connection  # type: ignore
+
 
 
 def main():
@@ -99,7 +108,7 @@ def main():
         "SELECT CONCAT('name=', name, ';ssn=', ssn, ';ip=', ip, \
         ';user_agent', user_agent, ';') AS message FROM users;"
     )
-    formatter = RedactingFormatter(fields=PII_FIELDS)
+    formatter = RedactingFormatter(fields=PII_FIELDS)  # type: ignore
     logger = get_logger()
 
     for user in users:
