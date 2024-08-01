@@ -1,3 +1,5 @@
+![Information about myself](info.png)
+
 # Resources
 
 **Read or watch:**
