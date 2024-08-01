@@ -62,10 +62,11 @@ GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 File: filtered_logger.py
 
-1. Log formatter
-mandatory
-Copy the following code into filtered_logger.py.
+### 1. Log formatter
 
+Copy the following code into `filtered_logger.py`.
+
+```bash
 import logging
 
 
@@ -82,12 +83,15 @@ class RedactingFormatter(logging.Formatter):
 
     def format(self, record: logging.LogRecord) -> str:
         NotImplementedError
-Update the class to accept a list of strings fields constructor argument.
+```
 
-Implement the format method to filter values in incoming log records using filter_datum. Values for fields in fields should be filtered.
+Update the class to accept a list of strings `fields` constructor argument.
 
-DO NOT extrapolate FORMAT manually. The format method should be less than 5 lines long.
+Implement the `format` method to filter values in incoming log records using `filter_datum`. Values for fields in `fields` should be filtered.
 
+DO NOT extrapolate `FORMAT` manually. The `format` method should be less than 5 lines long.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -108,11 +112,12 @@ bob@dylan:~$
 bob@dylan:~$ ./main.py
 [HOLBERTON] my_logger INFO 2019-11-19 18:24:25,105: name=Bob; email=***; ssn=***; password=***;
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
-File: filtered_logger.py
+File: `filtered_logger.py`
 
 ### 2. Create logger
 
