@@ -126,8 +126,10 @@ Create a tuple PII_FIELDS constant at the root of the module containing the fiel
 
 Tips:
 
-What Is PII, non-PII, and personal data?
-Uncovering Password Habits
+- [What Is PII, non-PII, and personal data?](https://intranet.alxswe.com/rltoken/jf71oYqiETchcVhPzQVnyg)
+- [Uncovering Password Habits](https://intranet.alxswe.com/rltoken/74q9SbCrKPfvBmpFZnyZxg)
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
