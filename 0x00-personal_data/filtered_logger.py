@@ -4,10 +4,11 @@
 Log formatter
 """
 
-import re
-from typing import List
 import logging
 import os
+import re
+from typing import List
+
 import mysql.connector
 
 PII_FIELDS = (
