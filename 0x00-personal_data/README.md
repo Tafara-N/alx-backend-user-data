@@ -66,7 +66,7 @@ name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `filtered_logger.py`
@@ -123,7 +123,7 @@ bob@dylan:~$ ./main.py
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `filtered_logger.py`
@@ -163,7 +163,7 @@ bob@dylan:~$ ./main.py
 <class 'logging.Logger'>
 PII_FIELDS: 5
 bob@dylan:~$
-Repo:
+**Repo:**
 
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
@@ -230,7 +230,7 @@ bob@dylan:~$ PERSONAL_DATA_DB_USERNAME=root PERSONAL_DATA_DB_PASSWORD=root PERSO
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `filtered_logger.py`
@@ -294,7 +294,7 @@ bob@dylan:~$ PERSONAL_DATA_DB_USERNAME=root PERSONAL_DATA_DB_PASSWORD=root PERSO
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `filtered_logger.py`
@@ -327,7 +327,7 @@ b'$2b$12$xSAw.bxfSTAlIBglPMXeL.SJnzme3Gm0E7eOEKOVV2OhqOakyUN5m'
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `encrypt_password.py`
@@ -365,7 +365,7 @@ True
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 - File: `encrypt_password.py`
