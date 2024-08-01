@@ -25,7 +25,9 @@ All your classes should have a documentation (python3 -c 'print(__import__("my_m
 All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 All your functions should be type annotated
-Tasks
+
+## Tasks
+
 ### 0. Regex-ing
 
 Write a function called `filter_datum` that returns the log message obfuscated:
