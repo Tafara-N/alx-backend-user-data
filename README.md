@@ -114,17 +114,17 @@ GitHub repository: alx-backend-user-data
 Directory: 0x00-personal_data
 File: filtered_logger.py
 
-2. Create logger
-mandatory
-Use user_data.csv for this task
+### 2. Create logger
 
-Implement a get_logger function that takes no arguments and returns a logging.Logger object.
+Use [user_data.csv](https://intranet.alxswe.com/rltoken/cVQXXtttuAobcFjYFKZTow) for this task
 
-The logger should be named "user_data" and only log up to logging.INFO level. It should not propagate messages to other loggers. It should have a StreamHandler with RedactingFormatter as formatter.
+Implement a `get_logger` function that takes no arguments and returns a `logging.Logger` object.
 
-Create a tuple PII_FIELDS constant at the root of the module containing the fields from user_data.csv that are considered PII. PII_FIELDS can contain only 5 fields - choose the right list of fields that can are considered as “important” PIIs or information that you must hide in your logs. Use it to parameterize the formatter.
+The logger should be named `"user_data"` and only log up to `logging.INFO` level. It should not propagate messages to other loggers. It should have a `StreamHandler` with `RedactingFormatter` as formatter.
 
-Tips:
+Create a tuple `PII_FIELDS` constant at the root of the module containing the fields from `user_data.csv` that are considered PII. `PII_FIELDS` can contain only 5 fields - choose the right list of fields that can are considered as “important” PIIs or information that you **must hide** in your logs. Use it to parameterize the formatter.
+
+**Tips:**
 
 - [What Is PII, non-PII, and personal data?](https://intranet.alxswe.com/rltoken/jf71oYqiETchcVhPzQVnyg)
 - [Uncovering Password Habits](https://intranet.alxswe.com/rltoken/74q9SbCrKPfvBmpFZnyZxg)
