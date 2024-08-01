@@ -96,7 +96,6 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
     return connection  # type: ignore
 
 
-
 def main():
     """
     Main function
