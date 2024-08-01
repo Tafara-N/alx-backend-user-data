@@ -67,7 +67,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `filtered_logger.py`
 
@@ -124,7 +124,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `filtered_logger.py`
 
@@ -165,7 +165,7 @@ PII_FIELDS: 5
 bob@dylan:~$
 **Repo:**
 
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `filtered_logger.py`
 
@@ -231,7 +231,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `filtered_logger.py`
 
@@ -295,7 +295,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `filtered_logger.py`
 
@@ -328,7 +328,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `encrypt_password.py`
 
@@ -366,6 +366,6 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 - Directory: `0x00-personal_data`
 - File: `encrypt_password.py`
