@@ -11,13 +11,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 **Read or watch:**
 - [REST API Authentication Mechanisms]()
 - [Base64 in Python]()
- Weight: 1
-
-
-
-(/)
-
-HTTP header Authorization (/rltoken/WlARq8tQPUGQq5VphLKM4w)
+- [HTTP header Authorization]()
 Flask (/rltoken/HG5WXgSja5kMa29fbMd9Aw)
 Base64 - concept (/rltoken/br6Rp4iMaOce6EAC-JQnOw)
 Learning Objectives
