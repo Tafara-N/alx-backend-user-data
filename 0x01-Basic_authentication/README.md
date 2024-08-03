@@ -46,9 +46,9 @@ At the end of this project, you are expected to be able to [explain to anyone]()
 
 Download and start your project from this [archive.zip]()
 
-In this archive, you will find a simple API with one model: User . Storage of these users is done via a
-serialization/deserialization in files.
-Setup and start server
+In this archive, you will find a simple API with one model: `User`. Storage of these users is done via a serialization/deserialization in files.
+
+**Setup and start server**
 
 ```bash
 bob@dylan:~$ pip3 install -r requirements.txt
