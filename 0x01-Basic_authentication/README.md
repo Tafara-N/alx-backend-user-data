@@ -213,7 +213,7 @@ GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/views/index.py`
 
-### 3. Auth class mandatory
+### 3. Auth class
 
 Now you will create a class to manage the API authentication.
 Create a folder api/v1/auth
