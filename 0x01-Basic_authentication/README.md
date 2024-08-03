@@ -102,9 +102,8 @@ Edit `api/v1/app.py` :
 
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
 
-- Route: GET /api/v1/unauthorized
-This endpoint must raise a 401 error by using abort - Custom Error Pages
-(/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
+- Route: `GET /api/v1/unauthorized`
+- This endpoint must raise a `401` error by using `abort` - [Custom Error Page]()
 By calling abort(401) , the error handler for 401 will be executed.
 In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
