@@ -100,8 +100,9 @@ Edit `api/v1/app.py` :
     - status code `401`
     - you must use `jsonify` from Flask
 
-For testing this new error handler, add a new endpoint in api/v1/views/index.py :
-Route: GET /api/v1/unauthorized
+For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
+
+- Route: GET /api/v1/unauthorized
 This endpoint must raise a 401 error by using abort - Custom Error Pages
 (/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
 By calling abort(401) , the error handler for 401 will be executed.
