@@ -96,9 +96,9 @@ What's the HTTP status code for a request unauthorized? `401` of course!
 Edit `api/v1/app.py` :
 
 - Add a new error handler for this status code, the response must be:
-- a JSON: `{"error": "Unauthorized"}`
-- status code `401`
-- you must use `jsonify` from Flask
+    - a JSON: `{"error": "Unauthorized"}`
+    - status code `401`
+    - you must use `jsonify` from Flask
 
 For testing this new error handler, add a new endpoint in api/v1/views/index.py :
 Route: GET /api/v1/unauthorized
