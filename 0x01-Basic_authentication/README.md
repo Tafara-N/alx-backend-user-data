@@ -24,8 +24,10 @@ At the end of this project, you are expected to be able to [explain to anyone]()
 - How to encode a string in Base64
 - What Basic authentication means
 - How to send the Authorization header
-Requirements
-Python Scripts
+
+# Requirements
+
+## Python Scripts
 All your files will be interpreted/compiled on Ubuntu 18.04 LTS using python3 (version 3.7)
 All your files should end with a new line
 The first line of all your files should be exactly #!/usr/bin/env python3
