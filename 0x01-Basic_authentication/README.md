@@ -14,9 +14,9 @@ In the industry, you should **not** implement your own Basic authentication syst
 - [HTTP header Authorization]()
 - [Flask]()
 - [Base64 - concept]()
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone
-(/rltoken/swiIZazfz7mspY1vjuy_Zg), without the help of Google:
+
+# Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](), **without the help of Google:**
 General
 What authentication means
 What Base64 is
