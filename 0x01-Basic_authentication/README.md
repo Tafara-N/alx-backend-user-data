@@ -48,6 +48,8 @@ Download and start your project from this archive.zip (/rltoken/2o4gAozNufil_Kjo
 In this archive, you will find a simple API with one model: User . Storage of these users is done via a
 serialization/deserialization in files.
 Setup and start server
+
+```bash
 bob@dylan:~$ pip3 install -r requirements.txt
 ...
 bob@dylan:~$
