@@ -217,8 +217,8 @@ File: `api/v1/app.py, api/v1/views/index.py`
 
 Now you will create a class to manage the API authentication.
 
-- Create a folder api/v1/auth
-Create an empty file api/v1/auth/__init__.py
+- Create a folder `api/v1/auth`
+- Create an empty file `api/v1/auth/__init__.py`
 Create the class Auth :
 in the file api/v1/auth/auth.py
 import request from flask
