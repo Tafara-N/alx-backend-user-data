@@ -146,7 +146,12 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
 bob@dylan:~$
 ```
 
-### 2. Error handler: Forbidden mandatory
+Repo:
+GitHub repository: alx-backend-user-data
+Directory: 0x01-Basic_authentication
+File: `api/v1/app.py, api/v1/views/index.py`
+
+### 2. Error handler: Forbidden
 
 What the HTTP status code for a request where the user is authenticate but not allowed to access to a
 resource? 403 of course!
