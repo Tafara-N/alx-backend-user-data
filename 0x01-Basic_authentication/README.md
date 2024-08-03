@@ -175,8 +175,11 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
+
 Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
-File: api/v1/app.py, api/v1/views/index.py
+File: `api/v1/app.py, api/v1/views/index.py`
