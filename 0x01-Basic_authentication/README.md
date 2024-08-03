@@ -221,7 +221,7 @@ Now you will create a class to manage the API authentication.
 - Create an empty file `api/v1/auth/__init__.py`
 - Create the class `Auth` :
 - in the file `api/v1/auth/auth.py`
-- import `request` from flask`
+- import `request` from `flask`
 - class name `Auth`
 
 Repo:
@@ -257,3 +257,8 @@ None
 None
 bob@dylan:~$
 ```
+
+Repo:
+GitHub repository: alx-backend-user-data
+Directory: 0x01-Basic_authentication
+File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
