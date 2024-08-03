@@ -60,7 +60,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
 bob@dylan:~$
 ```
 
-**Use the API (in another tab or in your browser)**
+**Use the API (*in another tab or in your browser*)**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status" -vvv
