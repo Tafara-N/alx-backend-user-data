@@ -213,7 +213,7 @@ GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/views/index.py`
 
-3. Auth class mandatory
+### 3. Auth class mandatory
 
 Now you will create a class to manage the API authentication.
 Create a folder api/v1/auth
@@ -228,11 +228,6 @@ GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
 File: api/v1/app.py, api/v1/views/index.py
 
-Score: 100.0% (Checks completed: 100.0%)
-
-
-
-(/)
 
 public method def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
 that returns False - path and excluded_paths will be used later, now, you don’t need to take
