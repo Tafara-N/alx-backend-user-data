@@ -223,15 +223,7 @@ Now you will create a class to manage the API authentication.
 - in the file `api/v1/auth/auth.py`
 - import `request` from `flask`
 - class name `Auth`
-
-Repo:
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/app.py, api/v1/views/index.py
-
-
-public method def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
-that returns False - path and excluded_paths will be used later, now, you don’t need to take
+- public method `def require_auth(self, path: str, excluded_paths: List[str]) -> bool:` that returns `False` - `path` and `excluded_paths` will be used later, now, you don’t need to take
 care of them
 public method def authorization_header(self, request=None) -> str: that returns None -
 request will be the Flask request object
