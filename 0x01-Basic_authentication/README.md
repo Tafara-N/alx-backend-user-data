@@ -12,7 +12,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 - [REST API Authentication Mechanisms]()
 - [Base64 in Python]()
 - [HTTP header Authorization]()
-Flask (/rltoken/HG5WXgSja5kMa29fbMd9Aw)
+- [Flask]()
 Base64 - concept (/rltoken/br6Rp4iMaOce6EAC-JQnOw)
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone
