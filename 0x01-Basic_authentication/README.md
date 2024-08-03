@@ -13,7 +13,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 - [Base64 in Python]()
 - [HTTP header Authorization]()
 - [Flask]()
-Base64 - concept (/rltoken/br6Rp4iMaOce6EAC-JQnOw)
+- [Base64 - concept]()
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone
 (/rltoken/swiIZazfz7mspY1vjuy_Zg), without the help of Google:
