@@ -17,7 +17,8 @@ In the industry, you should **not** implement your own Basic authentication syst
 
 # Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](), **without the help of Google:**
-General
+
+## General
 What authentication means
 What Base64 is
 How to encode a string in Base64
