@@ -35,8 +35,7 @@ At the end of this project, you are expected to be able to [explain to anyone]()
 - Your code should use the `pycodestyle` style (version `2.5`)
 - All your files must be executable
 - The length of your files will be tested using `wc`
-All your modules should have a documentation ( python3 -c
-'print(__import__("my_module").__doc__)' )
+- All your modules should have a documentation ( `python3 -c 'print(__import__("my_module").__doc__)'` )
 All your classes should have a documentation ( python3 -c
 'print(__import__("my_module").MyClass.__doc__)' )
 All your functions (inside and outside a class) should have a documentation ( python3 -c
