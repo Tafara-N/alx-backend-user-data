@@ -10,7 +10,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 
 **Read or watch:**
 - [REST API Authentication Mechanisms]()
-Base64 in Python (/rltoken/RpaPRyKx1rdHgRSUyuPfeg)
+- [Base64 in Python]()
  Weight: 1
 
 
