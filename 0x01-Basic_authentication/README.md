@@ -146,12 +146,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
 bob@dylan:~$
 ```
 
-
-
-(/)
-
- Done! Check your code  Get a sandbox QA Review
-2. Error handler: Forbidden mandatory
+### 2. Error handler: Forbidden mandatory
 
 What the HTTP status code for a request where the user is authenticate but not allowed to access to a
 resource? 403 of course!
