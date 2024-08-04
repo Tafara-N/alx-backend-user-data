@@ -580,27 +580,23 @@ GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
-### 11. Basic - Overload current_user - and BOOM! mandatory
+### 11. Basic - Overload current_user - and BOOM!
 
 Now, you have all pieces for having a complete Basic authentication.
-Add the method def current_user(self, request=None) -> TypeVar('User') in the class BasicAuth that
-overloads Auth and retrieves the User instance for a request:
-You must use authorization_header
-You must use extract_base64_authorization_header
-You must use decode_base64_authorization_header
-You must use extract_user_credentials
-You must use user_object_from_credentials
+
+Add the method `def current_user(self, request=None) -> TypeVar('User')` in the class `BasicAuth` that overloads `Auth` and retrieves the `User` instance for a request:
+
+- You must use `authorization_header`
+- You must use `extract_base64_authorization_header`
+- You must use `decode_base64_authorization_header`
+- You must use `extract_user_credentials`
+- You must use `user_object_from_credentials`
+
 With this update, now your API is fully protected by a Basic Authentication. Enjoy!
+
 In the first terminal:
-Directory: 0x01-Basic_authentication
-File: api/v1/auth/basic_auth.py
 
-Score: 36.84% (Checks completed: 36.84%)
-
-
-
-(/)
-
+```bash
 bob@dylan:~$ cat main_6.py
 #!/usr/bin/env python3
 """ Main 6
@@ -629,12 +625,11 @@ bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
-
-
-(/)
-
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
 "status": "OK"
@@ -658,34 +653,30 @@ bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym9iQGhidG4uaW
 86SDBsYmVydG9uU2Nob29sOTgh"
 [
-{
-"created_at": "2017-09-25 01:55:17",
-"email": "bob@hbtn.io",
-"first_name": null,
-"id": "9375973a-68c7-46aa-b135-29f79e837495",
-"last_name": null,
-"updated_at": "2017-09-25 01:55:17"
-}
+  {
+    "created_at": "2017-09-25 01:55:17",
+    "email": "bob@hbtn.io",
+    "first_name": null,
+    "id": "9375973a-68c7-46aa-b135-29f79e837495",
+    "last_name": null,
+    "updated_at": "2017-09-25 01:55:17"
+  }
 ]
 bob@dylan:~$
+```
 
- Done? Check your code Ask for a new correction  Get a sandbox QA Review
-12. Basic - Allow password with ":" #advanced
-
-Improve the method def extract_user_credentials(self, decoded_base64_authorization_header) to
-allow password with : .
 Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
-File: api/v1/auth/basic_auth.py
+File: `api/v1/auth/basic_auth.py`
 
-Score: 100.0% (Checks completed: 100.0%)
+### 12. Basic - Allow password with ":"
 
-
-
-(/)
+Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` to allow password with `:` .
 
 In the first terminal:
+
+```bash
 bob@dylan:~$ cat main_100.py
 #!/usr/bin/env python3
 """ Main 100
@@ -714,51 +705,50 @@ bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
-
-
-(/)
-
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users"
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym9iMTAwQGhidG
 4uaW86SDBsYmVydG9uOlNjaG9vbDo5OCE="
 [
-{
-"created_at": "2017-09-25 01:55:17",
-"email": "bob@hbtn.io",
-"first_name": null,
-"id": "9375973a-68c7-46aa-b135-29f79e837495",
-"last_name": null,
-"updated_at": "2017-09-25 01:55:17"
-},
-{
-"created_at": "2017-09-25 01:59:42",
-"email": "bob100@hbtn.io",
-"first_name": null,
-"id": "5891469b-d2d5-4d33-b05d-02617d665368",
-"last_name": null,
-"updated_at": "2017-09-25 01:59:42"
-}
+  {
+    "created_at": "2017-09-25 01:55:17",
+    "email": "bob@hbtn.io",
+    "first_name": null,
+    "id": "9375973a-68c7-46aa-b135-29f79e837495",
+    "last_name": null,
+    "updated_at": "2017-09-25 01:55:17"
+  },
+  {
+    "created_at": "2017-09-25 01:59:42",
+    "email": "bob100@hbtn.io",
+    "first_name": null,
+    "id": "5891469b-d2d5-4d33-b05d-02617d665368",
+    "last_name": null,
+    "updated_at": "2017-09-25 01:59:42"
+  }
 ]
 bob@dylan:~$
 
