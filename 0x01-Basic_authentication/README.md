@@ -87,7 +87,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 
 ### 1. Error handler: Unauthorized
 
@@ -148,7 +148,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/views/index.py`
 
 ### 2. Error handler: Forbidden
@@ -210,7 +210,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/views/index.py`
 
 ### 3. Auth class
@@ -249,7 +249,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
 
 ### 4. Define which routes don't need authentication
@@ -290,7 +290,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/auth.py`
 
 ### 5. Request validation!
@@ -354,7 +354,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/auth/auth.py`
 
 ### 6. Basic auth
@@ -403,7 +403,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/auth/basic_auth.py`
 
 ### 7. Basic - Base64 part
@@ -444,7 +444,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 8. Basic - Base64 decode
@@ -483,7 +483,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 9. Basic - User credentials
@@ -521,7 +521,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 10. Basic - User object
@@ -577,7 +577,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 11. Basic - Overload current_user - and BOOM!
@@ -667,7 +667,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 12. Basic - Allow password with ":"
@@ -755,7 +755,7 @@ bob@dylan:~$
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
 
 ### 13. Require auth with stars
@@ -770,5 +770,5 @@ Example for `excluded_paths = ["/api/v1/stat*"]` :
 
 Repo:
 - GitHub repository: `alx-backend-user-data`
-Directory: 0x01-Basic_authentication
+- Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/auth.py`
