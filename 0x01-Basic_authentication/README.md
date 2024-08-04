@@ -254,25 +254,15 @@ File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
 
 ### 4. Define which routes don't need authentication
 
-Update the method def require_auth(self, path: str, excluded_paths: List[str]) -> bool: in Auth
-that returns True if the path is not in the list of strings excluded_paths :
-Returns True if path is None
-Returns True if excluded_paths is None or empty
-Returns False if path is in excluded_paths
-You can assume excluded_paths contains string path always ending by a /
-Repo:
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py
+Update the method `def require_auth(self, path: str, excluded_paths: List[str]) -> bool:` in `Auth` that returns `True` if the `path` is not in the list of strings `excluded_paths` :
 
-Score: 100.0% (Checks completed: 100.0%)
+- Returns `True` if path is `None`
+- Returns `True` if `excluded_paths` is `None` or `empty`
+- Returns `False` if `path` is in `excluded_paths`
+- You can assume `excluded_paths` contains string path always ending by a `/`
+- This method must be slash tolerant: `path=/api/v1/status` and `path=/api/v1/status/` must be returned `False` if `excluded_paths` contains `/api/v1/status/`
 
-
-
-(/)
-
-This method must be slash tolerant: path=/api/v1/status and path=/api/v1/status/ must be
-returned False if excluded_paths contains /api/v1/status/
+```bash
 bob@dylan:~$ cat main_1.py
 #!/usr/bin/env python3
 """ Main 1
@@ -296,9 +286,14 @@ False
 True
 True
 bob@dylan:~$
+```
 
- Done! Check your code  Get a sandbox QA Review
-5. Request validation! mandatory
+Repo:
+GitHub repository: alx-backend-user-data
+Directory: 0x01-Basic_authentication
+File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
+
+### 5. Request validation! mandatory
 
 Now you will validate all requests to secure the API:
 Update the method def authorization_header(self, request=None) -> str: in api/v1/auth/auth.py :
