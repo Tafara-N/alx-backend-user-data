@@ -291,50 +291,45 @@ bob@dylan:~$
 Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
-File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
+File: `api/v1/auth/auth.py`
 
-### 5. Request validation! mandatory
+### 5. Request validation!
 
 Now you will validate all requests to secure the API:
-Update the method def authorization_header(self, request=None) -> str: in api/v1/auth/auth.py :
-If request is None , returns None
-If request doesn’t contain the header key Authorization , returns None
-Otherwise, return the value of the header request Authorization
-Repo:
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/auth/auth.py
 
-Score: 100.0% (Checks completed: 100.0%)
+Update the method `def authorization_header(self, request=None) -> str:` in `api/v1/auth/auth.py` :
 
-
-
-(/)
+- If `request` is `None` , returns `None`
+- If `request` doesn’t contain the header key `Authorization` , returns `None`
+- Otherwise, return the value of the header request `Authorization`
 
 Update the file api/v1/app.py :
-Create a variable auth initialized to None after the CORS definition
-Based on the environment variable AUTH_TYPE , load and assign the right instance of authentication
-to auth
-if auth :
-import Auth from api.v1.auth.auth
-create an instance of Auth and assign it to the variable auth
 
-Now the biggest piece is the filtering of each request. For that you will use the Flask method
-before_request (/rltoken/kzBrJT9aaokbD6aWYyQzXg)
-Add a method in api/v1/app.py to handler before_request
-if auth is None , do nothing
-if request.path is not part of this list ['/api/v1/status/', '/api/v1/unauthorized/',
-'/api/v1/forbidden/'] , do nothing - you must use the method require_auth from the auth
-instance
-if auth.authorization_header(request) returns None , raise the error 401 - you must use
-abort
-if auth.current_user(request) returns None , raise the error 403 - you must use abort
+- Create a variable `auth` initialized to `None` after the `CORS` definition
+- Based on the environment variable `AUTH_TYPE` , load and assign the right instance of authentication to `auth`
+    - if `auth` :
+        - import `Auth` from `api.v1.auth.auth`
+        - create an instance of `Auth` and assign it to the variable auth
+
+Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request]()
+
+- Add a method in `api/v1/app.py` to handler `before_request`
+    - if `auth` is `None` , do nothing
+    - if `request.path` is not part of this list `['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/']` , do nothing - you must use the method `require_auth` from the `auth` instance
+    - if `auth.authorization_header(request)` returns `None` , raise the error `401` - you must use `abort`
+    - if `auth.current_user(request)` returns `None` , raise the error `403` - you must use `abort`
 
 In the first terminal:
+
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=auth python3 -m api.v1.app
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
+
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
 "status": "OK"
@@ -355,15 +350,14 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 "error": "Forbidden"
 }
 bob@dylan:~$
+```
 
 Repo:
+GitHub repository: alx-backend-user-data
+Directory: 0x01-Basic_authentication
+File: `api/v1/app.py, api/v1/auth/auth.py`
 
-
-
-(/)
-
- Done! Check your code  Get a sandbox QA Review
-6. Basic auth mandatory
+### 6. Basic auth
 
 Create a class BasicAuth that inherits from Auth . For the moment this class will be empty.
 Update api/v1/app.py for using BasicAuth class instead of Auth depending of the value of the
@@ -396,18 +390,10 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 "error": "Forbidden"
 }
 bob@dylan:~$
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/app.py, api/v1/auth/auth.py
+```
 
-Score: 89.66% (Checks completed: 89.66%)
 
-
-
-(/)
-
- Done? Check your code Ask for a new correction  Get a sandbox QA Review
-7. Basic - Base64 part mandatory
+### 7. Basic - Base64 part
 
 Add the method def extract_base64_authorization_header(self, authorization_header: str) -> str:
 in the class BasicAuth that returns the Base64 part of the Authorization header for a Basic
