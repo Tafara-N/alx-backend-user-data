@@ -85,7 +85,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status" -vvv
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 
@@ -146,7 +146,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/views/index.py`
@@ -208,7 +208,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden" -vvv
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/views/index.py`
@@ -247,7 +247,7 @@ None
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
@@ -288,7 +288,7 @@ True
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/auth.py`
@@ -352,7 +352,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/auth/auth.py`
@@ -401,7 +401,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/app.py, api/v1/auth/basic_auth.py`
@@ -442,7 +442,7 @@ None
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -481,7 +481,7 @@ Holberton School
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -519,7 +519,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 ./main_4.py
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -575,7 +575,7 @@ Bob Dylan
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -665,7 +665,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -753,7 +753,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/basic_auth.py`
@@ -768,7 +768,7 @@ Example for `excluded_paths = ["/api/v1/stat*"]` :
 - `/api/v1/status` will return `False`
 - `/api/v1/stats` will return `False`
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x01-Basic_authentication`
 File: `api/v1/auth/auth.py`
