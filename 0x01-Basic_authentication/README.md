@@ -632,22 +632,22 @@ In a second terminal:
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users"
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym9iQGhidG4uaW
