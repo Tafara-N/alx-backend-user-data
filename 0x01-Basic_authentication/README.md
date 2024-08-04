@@ -751,22 +751,24 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym
   }
 ]
 bob@dylan:~$
+```
 
- Done? Check your code  Get a sandbox QA Review
 Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x01-Basic_authentication
-File: api/v1/auth/basic_auth.py
+File: `api/v1/auth/basic_auth.py`
 
-
+### 13. Require auth with stars
 
-(/)
+Improve `def require_auth(self, path, excluded_paths)` by allowing `*` at the end of excluded paths.
 
-Copyright © 2024 ALX, All rights reserved.
-13. Require auth with stars #advanced
+Example for `excluded_paths = ["/api/v1/stat*"]` :
 
-Improve def require_auth(self, path, excluded_paths) by allowing * at the end of excluded paths.
-Example for excluded_paths = ["/api/v1/stat*"] :
-/api/v1/users will return True
-/api/v1/status will return False
-/api/v1/stats will return False
+- `/api/v1/users` will return `True`
+- `/api/v1/status` will return `False`
+- `/api/v1/stats` will return `False`
+
+Repo:
+GitHub repository: alx-backend-user-data
+Directory: 0x01-Basic_authentication
+File: `api/v1/auth/auth.py`
