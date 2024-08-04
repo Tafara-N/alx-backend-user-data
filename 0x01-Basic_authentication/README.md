@@ -309,7 +309,7 @@ Update the file api/v1/app.py :
 - Based on the environment variable `AUTH_TYPE` , load and assign the right instance of authentication to `auth`
     - if `auth` :
         - import `Auth` from `api.v1.auth.auth`
-        - create an instance of `Auth` and assign it to the variable auth
+        - create an instance of `Auth` and assign it to the variable `auth`
 
 Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request]()
 
@@ -359,12 +359,15 @@ File: `api/v1/app.py, api/v1/auth/auth.py`
 
 ### 6. Basic auth
 
-Create a class BasicAuth that inherits from Auth . For the moment this class will be empty.
-Update api/v1/app.py for using BasicAuth class instead of Auth depending of the value of the
-environment variable AUTH_TYPE , If AUTH_TYPE is equal to basic_auth :
-import BasicAuth from api.v1.auth.basic_auth
-create an instance of BasicAuth and assign it to the variable auth
+Create a class `BasicAuth` that inherits from `Auth` . For the moment this class will be empty.
+
+Update `api/v1/app.py` for using `BasicAuth` class instead of `Auth` depending of the value of the environment variable `AUTH_TYPE` , If `AUTH_TYPE` is equal to `basic_auth` :
+
+- import `BasicAuth` from `api.v1.auth.basic_auth`
+- create an instance of `BasicAuth` and assign it to the variable `auth`
+
 Otherwise, keep the previous mechanism with auth an instance of Auth .
+
 In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
