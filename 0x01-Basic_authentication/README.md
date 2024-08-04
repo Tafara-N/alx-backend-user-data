@@ -86,7 +86,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 
 ### 1. Error handler: Unauthorized
@@ -147,7 +147,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/views/index.py`
 
@@ -209,7 +209,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/views/index.py`
 
@@ -248,7 +248,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth, api/v1/auth/__init__.py, api/v1/auth/auth.py`
 
@@ -289,7 +289,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/auth.py`
 
@@ -353,7 +353,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/auth/auth.py`
 
@@ -402,7 +402,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/app.py, api/v1/auth/basic_auth.py`
 
@@ -443,7 +443,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -482,7 +482,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -520,7 +520,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -576,7 +576,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -666,7 +666,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -754,7 +754,7 @@ bob@dylan:~$
 ```
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/basic_auth.py`
 
@@ -769,6 +769,6 @@ Example for `excluded_paths = ["/api/v1/stat*"]` :
 - `/api/v1/stats` will return `False`
 
 Repo:
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x01-Basic_authentication
 File: `api/v1/auth/auth.py`
