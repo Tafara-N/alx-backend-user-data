@@ -368,35 +368,35 @@ Update `api/v1/app.py` for using `BasicAuth` class instead of `Auth` depending o
 
 Otherwise, keep the previous mechanism with `auth` an instance of `Auth` .
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
-* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
 ```
 
-In a second terminal:
+**I**n a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status/"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users"
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 ```
