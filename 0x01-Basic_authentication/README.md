@@ -120,7 +120,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized"
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
@@ -140,7 +140,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
 < Date: Sun, 24 Sep 2017 22:50:40 GMT
 <
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 * Closing connection 0
 bob@dylan:~$
