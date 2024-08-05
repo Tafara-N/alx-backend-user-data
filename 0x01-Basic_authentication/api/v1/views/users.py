@@ -19,11 +19,11 @@ def view_all_users() -> str:
     """
 
     all_users = [user.to_json() for user in User.all()]
-    return jsonify(all_users)
+    return jsonify(all_users)  # type: ignore
 
 
 @app_views.route('/users/<user_id>', methods=['GET'], strict_slashes=False)
-def view_one_user(user_id: str = None) -> str:
+def view_one_user(user_id: str = None) -> str:  # type: ignore
     """
     GET /api/v1/users/:id
 
@@ -40,11 +40,11 @@ def view_one_user(user_id: str = None) -> str:
     user = User.get(user_id)
     if user is None:
         abort(404)
-    return jsonify(user.to_json())
+    return jsonify(user.to_json())  # type: ignore
 
 
 @app_views.route('/users/<user_id>', methods=['DELETE'], strict_slashes=False)
-def delete_user(user_id: str = None) -> str:
+def delete_user(user_id: str = None) -> str:  # type: ignore
     """
     DELETE /api/v1/users/:id
 
@@ -62,7 +62,7 @@ def delete_user(user_id: str = None) -> str:
     if user is None:
         abort(404)
     user.remove()
-    return jsonify({}), 200
+    return jsonify({}), 200  # type: ignore
 
 
 @app_views.route('/users', methods=['POST'], strict_slashes=False)
@@ -89,26 +89,26 @@ def create_user() -> str:
         rj = None
     if rj is None:
         error_msg = "Wrong format"
-    if error_msg is None and rj.get("email", "") == "":
+    if error_msg is None and rj.get("email", "") == "":  # type: ignore
         error_msg = "email missing"
-    if error_msg is None and rj.get("password", "") == "":
+    if error_msg is None and rj.get("password", "") == "":  # type: ignore
         error_msg = "password missing"
     if error_msg is None:
         try:
             user = User()
-            user.email = rj.get("email")
-            user.password = rj.get("password")
-            user.first_name = rj.get("first_name")
-            user.last_name = rj.get("last_name")
+            user.email = rj.get("email")  # type: ignore
+            user.password = rj.get("password")  # type: ignore
+            user.first_name = rj.get("first_name")  # type: ignore
+            user.last_name = rj.get("last_name")  # type: ignore
             user.save()
-            return jsonify(user.to_json()), 201
+            return jsonify(user.to_json()), 201  # type: ignore
         except Exception as e:
             error_msg = "Can't create User: {}".format(e)
-    return jsonify({'error': error_msg}), 400
+    return jsonify({'error': error_msg}), 400  # type: ignore
 
 
 @app_views.route('/users/<user_id>', methods=['PUT'], strict_slashes=False)
-def update_user(user_id: str = None) -> str:
+def update_user(user_id: str = None) -> str:  # type: ignore
     """
     PUT /api/v1/users/:id
 
@@ -135,10 +135,10 @@ def update_user(user_id: str = None) -> str:
     except Exception as e:
         rj = None
     if rj is None:
-        return jsonify({'error': "Wrong format"}), 400
+        return jsonify({'error': "Wrong format"}), 400  # type: ignore
     if rj.get('first_name') is not None:
         user.first_name = rj.get('first_name')
     if rj.get('last_name') is not None:
         user.last_name = rj.get('last_name')
     user.save()
-    return jsonify(user.to_json()), 200
+    return jsonify(user.to_json()), 200  # type: ignore
