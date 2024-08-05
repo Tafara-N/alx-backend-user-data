@@ -182,7 +182,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden" -vvv
@@ -202,7 +202,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden" -vvv
 < Date: Sun, 24 Sep 2017 22:54:22 GMT
 <
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 * Closing connection 0
 bob@dylan:~$
