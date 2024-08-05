@@ -16,7 +16,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 - [Base64 - concept](https://intranet.alxswe.com/rltoken/br6Rp4iMaOce6EAC-JQnOw)
 
 # Learning Objectives
-At the end of this project, you are expected to be able to [explain to anyone](), **without the help of Google:**
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/swiIZazfz7mspY1vjuy_Zg), **without the help of Google:**
 
 ## General
 - What authentication means
