@@ -311,7 +311,7 @@ Update the file api/v1/app.py :
         - import `Auth` from `api.v1.auth.auth`
         - create an instance of `Auth` and assign it to the variable `auth`
 
-Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request]()
+Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://intranet.alxswe.com/rltoken/kzBrJT9aaokbD6aWYyQzXg)
 
 - Add a method in `api/v1/app.py` to handler `before_request`
     - if `auth` is `None` , do nothing
@@ -319,35 +319,35 @@ Now the biggest piece is the filtering of each request. For that you will use th
     - if `auth.authorization_header(request)` returns `None` , raise the error `401` - you must use `abort`
     - if `auth.current_user(request)` returns `None` , raise the error `403` - you must use `abort`
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=auth python3 -m api.v1.app
-* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status/"
 {
-"status": "OK"
+  "status": "OK"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users"
 {
-"error": "Unauthorized"
+  "error": "Unauthorized"
 }
 bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 {
-"error": "Forbidden"
+  "error": "Forbidden"
 }
 bob@dylan:~$
 ```
