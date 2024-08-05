@@ -10,7 +10,7 @@ In the industry, you should **not** implement your own Basic authentication syst
 
 **Read or watch:**
 - [REST API Authentication Mechanisms](https://intranet.alxswe.com/rltoken/ssg5umgsMk5jKM8WRHk2Ug)
-- [Base64 in Python]()
+- [Base64 in Python](https://intranet.alxswe.com/rltoken/RpaPRyKx1rdHgRSUyuPfeg)
 - [HTTP header Authorization]()
 - [Flask]()
 - [Base64 - concept]()
