@@ -165,7 +165,7 @@ Edit `api/v1/app.py` :
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
 
 - Route: `GET /api/v1/forbidden`
-- This endpoint must raise a 403 error by using `abort` - [Custom Error Pages]()
+- This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://intranet.alxswe.com/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
 
 By calling `abort(403)` , the error handler for 403 will be executed.
 
