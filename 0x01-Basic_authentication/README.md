@@ -495,7 +495,7 @@ Add the method `def extract_user_credentials(self, decoded_base64_authorization_
 - Return `None, None` if `decoded_base64_authorization_header` is not a string
 - Return `None, None` if `decoded_base64_authorization_header` doesn’t contain `:`
 - Otherwise, return the user email and the user password - these 2 values must be separated by a `:`
-- You can assume `decoded_base64_authorization_header` will contain only one :
+- You can assume `decoded_base64_authorization_header` will contain only one `:`
 
 ```bash
 bob@dylan:~$ cat main_4.py
