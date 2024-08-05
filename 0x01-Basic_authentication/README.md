@@ -594,7 +594,7 @@ Add the method `def current_user(self, request=None) -> TypeVar('User')` in the 
 
 With this update, now your API is fully protected by a Basic Authentication. Enjoy!
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ cat main_6.py
@@ -623,11 +623,11 @@ New user: 9375973a-68c7-46aa-b135-29f79e837495 / bob@hbtn.io
 Basic Base64: Ym9iQGhidG4uaW86SDBsYmVydG9uU2Nob29sOTgh
 bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
-* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
