@@ -55,7 +55,7 @@ bob@dylan:~$ pip3 install -r requirements.txt
 ...
 bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
-* Serving Flask app "app" (lazy loading)
+ * Serving Flask app "app" (lazy loading)
 ...
 bob@dylan:~$
 ```
@@ -103,7 +103,7 @@ Edit `api/v1/app.py` :
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
 
 - Route: `GET /api/v1/unauthorized`
-- This endpoint must raise a `401` error by using `abort` - [Custom Error Page]()
+- This endpoint must raise a `401` error by using `abort` - [Custom Error Page](https://intranet.alxswe.com/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
 
 By calling `abort(401)` , the error handler for 401 will be executed.
 
