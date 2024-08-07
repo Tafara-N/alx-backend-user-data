@@ -96,7 +96,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
@@ -160,7 +160,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth python3 -m ap
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
@@ -378,7 +378,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000"
@@ -415,7 +415,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
@@ -507,7 +507,7 @@ User with ID: cf3ddee1-ff24-49e4-a40b-2540333fe992 has a Session ID: 9d1648aa-da
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/"
@@ -555,7 +555,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XGET
@@ -670,7 +670,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XPOST -d "email=bobsession@hbtn.io" -d "password=fake pwd" -vvv
@@ -780,7 +780,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_exp_auth SESSION_N
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XPOST -d "email=bobsession@hbtn.io" -d "password=fake pwd" -vvv
@@ -879,7 +879,7 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_db_auth SESSION_NA
 ....
 ```
 
-In a second terminal:
+**In a second terminal:**
 
 ```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XPOST -d "email=bobsession@hbtn.io" -d "password=fake pwd" -vvv
