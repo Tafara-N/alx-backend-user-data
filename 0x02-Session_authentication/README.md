@@ -807,9 +807,12 @@ Update api/v1/app.py to instantiate auth with SessionDBAuth if the environment v
 
 In the first terminal:
 
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_db_auth SESSION_NAME=_my_session_id SESSION_DURATION=60 python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
 ```bash
