@@ -795,7 +795,7 @@ For avoid that, you will create a new authentication system, based on Session ID
 
 Create a new model `UserSession` in `models/user_session.py` that inherits from `Base`:
 
-Implement the `def __init__(self, *args: list, **kwargs: dict):` like in `User` but for these 2 attributes:
+- Implement the `def __init__(self, *args: list, **kwargs: dict):` like in `User` but for these 2 attributes:
     - `user_id`: string
     - `session_id`: string
 Create a new authentication class SessionDBAuth in api/v1/auth/session_db_auth.py that inherits from SessionExpAuth:
