@@ -787,13 +787,13 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/session_exp_auth.py, api/v1/app.py
 
-10. Sessions in database
-#advanced
+### 10. Sessions in database
+
 Since the beginning, all Session IDs are stored in memory. It means, if your application stops, all Session IDs are lost.
 
-For avoid that, you will create a new authentication system, based on Session ID stored in database (for us, it will be in a file, like User).
+For avoid that, you will create a new authentication system, based on Session ID stored in database (for us, it will be in a file, like `User`).
 
-Create a new model UserSession in models/user_session.py that inherits from Base:
+Create a new model `UserSession` in `models/user_session.py` that inherits from `Base`:
 
 Implement the def __init__(self, *args: list, **kwargs: dict): like in User but for these 2 attributes:
 user_id: string
