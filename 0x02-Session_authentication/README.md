@@ -595,28 +595,34 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/views/session_auth.py, api/v1/views/__init__.py
 
-8. Logout
-mandatory
-Update the class SessionAuth by adding a new method def destroy_session(self, request=None): that deletes the user session / logout:
+### 8. Logout
 
-If the request is equal to None, return False
-If the request doesn’t contain the Session ID cookie, return False - you must use self.session_cookie(request)
-If the Session ID of the request is not linked to any User ID, return False - you must use self.user_id_for_session_id(...)
-Otherwise, delete in self.user_id_by_session_id the Session ID (as key of this dictionary) and return True
-Update the file api/v1/views/session_auth.py, by adding a new route DELETE /api/v1/auth_session/logout:
+Update the class `SessionAuth` by adding a new method `def destroy_session(self, request=None):` that deletes the user session / logout:
 
-Slash tolerant
-You must use from api.v1.app import auth
-You must use auth.destroy_session(request) for deleting the Session ID contains in the request as cookie:
-If destroy_session returns False, abort(404)
-Otherwise, return an empty JSON dictionary with the status code 200
+- If the `request` is equal to `None`, return `False`
+- If the `request` doesn’t contain the Session ID cookie, return `False` - you must use `self.session_cookie(request)`
+- If the Session ID of the request is not linked to any User ID, return `False` - you must use `self.user_id_for_session_id(...)`
+- Otherwise, delete in `self.user_id_by_session_id` the Session ID (as key of this dictionary) and return `True`
+
+Update the file `api/v1/views/session_auth.py`, by adding a new route `DELETE /api/v1/auth_session/logout`:
+
+- Slash tolerant
+- You must use `from api.v1.app import auth`
+- You must use `auth.destroy_session(request)` for deleting the Session ID contains in the request as cookie:
+    - If `destroy_session` returns `False`, `abort(404)`
+    - Otherwise, return an empty JSON dictionary with the status code 200
+
 In the first terminal:
 
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XPOST -d "email=bobsession@hbtn.io" -d "password=fake pwd" -vvv
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying 0.0.0.0...
@@ -673,15 +679,16 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "error": "Forbidden"
 }
 bob@dylan:~$
+```
+
 Login, logout… what’s else?
 
 Now, after getting a Session ID, you can request all protected API routes by using this Session ID, no need anymore to send User email and password every time.
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/session_auth.py, api/v1/views/session_auth.py
+File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
 
 ### 9. Expiration?
 
