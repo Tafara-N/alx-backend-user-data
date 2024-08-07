@@ -683,21 +683,22 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/session_auth.py, api/v1/views/session_auth.py
 
-9. Expiration?
-#advanced
+### 9. Expiration?
+
 Actually you have 2 authentication systems:
 
-Basic authentication
-Session authentication
+- Basic authentication
+- Session authentication
+
 Now you will add an expiration date to a Session ID.
 
-Create a class SessionExpAuth that inherits from SessionAuth in the file api/v1/auth/session_exp_auth.py:
+Create a class `SessionExpAuth` that inherits from `SessionAuth` in the file `api/v1/auth/session_exp_auth.py`:
 
-Overload def __init__(self): method:
-Assign an instance attribute session_duration:
-To the environment variable SESSION_DURATION casts to an integer
-If this environment variable doesn’t exist or can’t be parse to an integer, assign to 0
-Overload def create_session(self, user_id=None):
+- Overload `def __init__(self):` method:
+    - Assign an instance attribute `session_duration`:
+    - To the environment variable `SESSION_DURATION` casts to an integer
+    - If this environment variable doesn’t exist or can’t be parse to an integer, assign to 0
+- Overload def create_session(self, user_id=None):
 Create a Session ID by calling super() - super() will call the create_session() method of SessionAuth
 Return None if super() can’t create a Session ID
 Use this Session ID as key of the dictionary user_id_by_session_id - the value for this key must be a dictionary (called “session dictionary”):
