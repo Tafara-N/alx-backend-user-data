@@ -715,11 +715,15 @@ Update api/v1/app.py to instantiate auth with SessionExpAuth if the environment 
 
 In the first terminal:
 
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_exp_auth SESSION_NAME=_my_session_id SESSION_DURATION=60 python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XPOST -d "email=bobsession@hbtn.io" -d "password=fake pwd" -vvv
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying 0.0.0.0...
@@ -781,11 +785,12 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "error": "Forbidden"
 }
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/session_exp_auth.py, api/v1/app.py
+File: `api/v1/auth/session_exp_auth.py, api/v1/app.py`
 
 ### 10. Sessions in database
 
