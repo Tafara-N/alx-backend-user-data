@@ -134,7 +134,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/app.py, api/v1/views/users.py`
 
@@ -186,7 +186,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py, api/v1/app.py`
 
@@ -249,7 +249,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
 
@@ -337,7 +337,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
 
@@ -396,7 +396,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/auth.py`
 
@@ -445,7 +445,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/app.py`
 
@@ -522,7 +522,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
 
@@ -641,7 +641,7 @@ bob@dylan:~$
 Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/views/session_auth.py, api/v1/views/__init__.py`
 
@@ -736,7 +736,7 @@ Login, logout… what’s else?
 Now, after getting a Session ID, you can request all protected API routes by using this Session ID, no need anymore to send User email and password every time.
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
 
@@ -847,7 +847,7 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_exp_auth.py, api/v1/app.py`
 
@@ -946,6 +946,6 @@ bob@dylan:~$
 ```
 
 **Repo:**
-GitHub repository: alx-backend-user-data
+- GitHub repository: `alx-backend-user-data`
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_db_auth.py, api/v1/app.py, models/user_session.py`
