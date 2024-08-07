@@ -136,7 +136,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/app.py, api/v1/views/users.py`
+- File: `api/v1/app.py, api/v1/views/users.py`
 
 ### 1. Empty session
 
@@ -188,7 +188,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_auth.py, api/v1/app.py`
+- File: `api/v1/auth/session_auth.py, api/v1/app.py`
 
 ### 2. Create a session
 
@@ -251,7 +251,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_auth.py`
+- File: `api/v1/auth/session_auth.py`
 
 ### 3. User ID for Session ID
 
@@ -339,7 +339,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_auth.py`
+- File: `api/v1/auth/session_auth.py`
 
 ### 4. Session cookie
 
@@ -398,7 +398,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/auth.py`
+- File: `api/v1/auth/auth.py`
 
 ### 5. Before request
 
@@ -447,7 +447,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/app.py`
+- File: `api/v1/app.py`
 
 ### 6. Use Session ID for identifying a User
 
@@ -524,7 +524,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_auth.py`
+- File: `api/v1/auth/session_auth.py`
 
 ### 7. New view for Session Authentication
 
@@ -643,7 +643,7 @@ Now you have an authentication based on a Session ID stored in cookie, perfect f
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/views/session_auth.py, api/v1/views/__init__.py`
+- File: `api/v1/views/session_auth.py, api/v1/views/__init__.py`
 
 ### 8. Logout
 
@@ -738,7 +738,7 @@ Now, after getting a Session ID, you can request all protected API routes by usi
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
+- File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
 
 ### 9. Expiration?
 
@@ -849,7 +849,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_exp_auth.py, api/v1/app.py`
+- File: `api/v1/auth/session_exp_auth.py, api/v1/app.py`
 
 ### 10. Sessions in database
 
@@ -948,4 +948,4 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x02-Session_authentication`
-File: `api/v1/auth/session_db_auth.py, api/v1/app.py, models/user_session.py`
+- File: `api/v1/auth/session_db_auth.py, api/v1/app.py, models/user_session.py`
