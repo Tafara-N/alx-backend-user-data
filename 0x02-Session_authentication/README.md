@@ -1,15 +1,16 @@
-Background Context
-In this project, you will implement a Session Authentication. You are not allowed to install any other module.
+# Background Context
 
-In the industry, you should not implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: Flask-HTTPAuth). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In this project, you will implement a **Session Authentication**. You are not allowed to install any other module.
 
-Resources
-Read or watch:
+In the industry, you should **not** implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://intranet.alxswe.com/rltoken/_ZTQTaMKjx1S_xATshexkA)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
-REST API Authentication Mechanisms - Only the session auth part
-HTTP Cookie
-Flask
-Flask Cookie
+# Resources
+
+**Read or watch:**
+- [REST API Authentication Mechanisms - Only the session auth part](https://intranet.alxswe.com/rltoken/oofk0VhuS0ZFZTNTVrQeaQ)
+- [HTTP Cookie](https://intranet.alxswe.com/rltoken/peLV8xuJ4PDJMOVFqk-d2g)
+- [Flask](https://intranet.alxswe.com/rltoken/AI1tFR5XriGfR8Tz7YTYQA)
+- [Flask Cookie](https://intranet.alxswe.com/rltoken/QYfI5oW6OHUmHDzwKV1Qsw)
 
 # Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/uWXp4VcY3Dd9UzTtc9N5_A), **without the help of Google:**
