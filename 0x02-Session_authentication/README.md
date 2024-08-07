@@ -19,7 +19,8 @@ What session authentication means
 What Cookies are
 How to send Cookies
 How to parse Cookies
-Requirements
+
+# Requirements
 
 ## Python Scripts
 - All your files will be interpreted/compiled on Ubuntu 18.04 LTS using `python3` (version `3.7`)
