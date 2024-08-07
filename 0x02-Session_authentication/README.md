@@ -496,10 +496,10 @@ In the file `api/v1/views/session_auth.py`, create a route `POST /auth_session/l
     - If no `User` found, return the JSON `{ "error": "no user found for this email" }` with the status code `404`
     - If the `password` is not the one of the User found, return the JSON `{ "error": "wrong password" }` with the status code `401` - you must use `is_valid_password` from the `User` instance
     - Otherwise, create a Session ID for the `User` ID:
-You must use from api.v1.app import auth - WARNING: please import it only where you need it - not on top of the file (can generate circular import - and break first tasks of this project)
-You must use auth.create_session(..) for creating a Session ID
-Return the dictionary representation of the User - you must use to_json() method from User
-You must set the cookie to the response - you must use the value of the environment variable SESSION_NAME as cookie name - tip
+        - You must use `from api.v1.app import auth` - **WARNING: please import it only where you need it** - not on top of the file (can generate circular import - and break first tasks of this project)
+- You must use `auth.create_session(..)` for creating a Session ID
+- Return the dictionary representation of the `User` - you must use `to_json()` method from `User`
+- You must set the cookie to the response - you must use the value of the environment variable `SESSION_NAME` as cookie name - [tip](https://intranet.alxswe.com/rltoken/3WDlzYbVvdJJAf70IjWK6g)
 
 In the file `api/v1/views/__init__.py`, you must add this new view at the end of the file.
 
