@@ -133,7 +133,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" -H "Authorization: Basic
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/app.py, api/v1/views/users.py`
@@ -185,7 +185,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py, api/v1/app.py`
@@ -248,7 +248,7 @@ abcde => 02079cb4-6847-48aa-924e-0514d82a43f4: {'61997a1b-3f8a-4b0f-87f6-19d5caf
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
@@ -336,7 +336,7 @@ abcde => 5d2930ba-f6d6-4a23-83d2-4f0abc8b8eee: {'a159ee3f-214e-4e91-9546-ca3ce87
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
@@ -395,7 +395,7 @@ Cookie value: None
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/auth.py`
@@ -444,7 +444,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/app.py`
@@ -521,7 +521,7 @@ User found: cf3ddee1-ff24-49e4-a40b-2540333fe992
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py`
@@ -640,7 +640,7 @@ bob@dylan:~$
 
 Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/views/session_auth.py, api/v1/views/__init__.py`
@@ -735,7 +735,7 @@ Login, logout… what’s else?
 
 Now, after getting a Session ID, you can request all protected API routes by using this Session ID, no need anymore to send User email and password every time.
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
@@ -846,7 +846,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_exp_auth.py, api/v1/app.py`
@@ -945,7 +945,7 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: `api/v1/auth/session_db_auth.py, api/v1/app.py, models/user_session.py`
