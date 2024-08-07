@@ -368,19 +368,24 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/auth.py
 
-5. Before request
-mandatory
-Update the @app.before_request method in api/v1/app.py:
+### 5. Before request
 
-Add the URL path /api/v1/auth_session/login/ in the list of excluded paths of the method require_auth - this route doesn’t exist yet but it should be accessible outside authentication
-If auth.authorization_header(request) and auth.session_cookie(request) return None, abort(401)
+Update the `@app.before_request` method in `api/v1/app.py`:
+
+- Add the URL path `/api/v1/auth_session/login/` in the list of excluded paths of the method `require_auth` - this route doesn’t exist yet but it should be accessible outside authentication
+- If `auth.authorization_header(request)` and `auth.session_cookie(request)` return `None`, `abort(401)`
+
 In the first terminal:
 
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
   "status": "OK"
@@ -405,11 +410,12 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "error": "Forbidden"
 }
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/app.py
+File: `api/v1/app.py`
 
 ### 6. Use Session ID for identifying a User
 
