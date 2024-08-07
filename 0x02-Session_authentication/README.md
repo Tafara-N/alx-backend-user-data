@@ -315,16 +315,18 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/session_auth.py
 
-4. Session cookie
-mandatory
-Update api/v1/auth/auth.py by adding the method def session_cookie(self, request=None): that returns a cookie value from a request:
+### 4. Session cookie
 
-Return None if request is None
-Return the value of the cookie named _my_session_id from request - the name of the cookie must be defined by the environment variable SESSION_NAME
-You must use .get() built-in for accessing the cookie in the request cookies dictionary
-You must use the environment variable SESSION_NAME to define the name of the cookie used for the Session ID
+Update `api/v1/auth/auth.py` by adding the method `def session_cookie(self, request=None):` that returns a cookie value from a request:
+
+- Return `None` if request is `None`
+- Return the value of the cookie named `_my_session_id` from `request` - the name of the cookie must be defined by the environment variable `SESSION_NAME`
+- You must use `.get()` built-in for accessing the cookie in the request cookies dictionary
+- You must use the environment variable `SESSION_NAME` to define the name of the cookie used for the Session ID
+
 In the first terminal:
 
+```bash
 bob@dylan:~$ cat main_3.py
 #!/usr/bin/env python3
 """ Cookie server
@@ -348,8 +350,11 @@ if __name__ == "__main__":
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id ./main_3.py
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000"
 Cookie value: None
 bob@dylan:~$
@@ -362,11 +367,12 @@ bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000" --cookie "_my_session_id_fake"
 Cookie value: None
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/auth.py
+File: `api/v1/auth/auth.py`
 
 ### 5. Before request
 
