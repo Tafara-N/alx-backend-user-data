@@ -711,7 +711,8 @@ Return the user_id key from the session dictionary if self.session_duration is e
 Return None if session dictionary doesn’t contain a key created_at
 Return None if the created_at + session_duration seconds are before the current datetime. datetime - timedelta
 Otherwise, return user_id from the session dictionary
-Update api/v1/app.py to instantiate auth with SessionExpAuth if the environment variable AUTH_TYPE is equal to session_exp_auth.
+
+Update `api/v1/app.py` to instantiate auth with `SessionExpAuth` if the environment variable `AUTH_TYPE` is equal to `session_exp_auth`.
 
 In the first terminal:
 
