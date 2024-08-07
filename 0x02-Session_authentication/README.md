@@ -179,9 +179,9 @@ Update `SessionAuth` class:
     - Return `None` if `user_id` is `None`
     - Return `None` if `user_id` is not a string
     - Otherwise:
-- Generate a Session ID using `uuid` module and `uuid4()` like `id` in `Base`
-- Use this Session ID as key of the dictionary `user_id_by_session_id` - the value for this key must be `user_id`
-- Return the Session ID
+        - Generate a Session ID using `uuid` module and `uuid4()` like `id` in `Base`
+        - Use this Session ID as key of the dictionary `user_id_by_session_id` - the value for this key must be `user_id`
+        - Return the Session ID
 - The same `user_id` can have multiple Session ID - indeed, the `user_id` is the value in the dictionary `user_id_by_session_id`
 
 Now you an “in-memory” Session ID storing. You will be able to retrieve an `User` id based on a Session ID.
