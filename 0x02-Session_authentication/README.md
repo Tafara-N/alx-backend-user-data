@@ -230,18 +230,20 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/session_auth.py
 
-3. User ID for Session ID
-mandatory
-Update SessionAuth class:
+### 3. User ID for Session ID
 
-Create an instance method def user_id_for_session_id(self, session_id: str = None) -> str: that returns a User ID based on a Session ID:
+Update `SessionAuth` class:
 
-Return None if session_id is None
-Return None if session_id is not a string
-Return the value (the User ID) for the key session_id in the dictionary user_id_by_session_id.
-You must use .get() built-in for accessing in a dictionary a value based on key
-Now you have 2 methods (create_session and user_id_for_session_id) for storing and retrieving a link between a User ID and a Session ID.
+Create an instance method `def user_id_for_session_id(self, session_id: str = None) -> str:` that returns a `User` ID based on a Session ID:
 
+- Return `None` if `session_id` is `None`
+- Return `None` if `session_id` is not a string
+- Return the value (the User ID) for the key `session_id` in the dictionary `user_id_by_session_id`.
+- You must use `.get()` built-in for accessing in a dictionary a value based on key
+
+Now you have 2 methods (`create_session` and `user_id_for_session_id`) for storing and retrieving a link between a `User` ID and a Session ID.
+
+```bash
 bob@dylan:~$ cat main_2.py
 #!/usr/bin/env python3
 """ Main 2
@@ -309,11 +311,12 @@ abcde => 5d2930ba-f6d6-4a23-83d2-4f0abc8b8eee: {'a159ee3f-214e-4e91-9546-ca3ce87
 5d2930ba-f6d6-4a23-83d2-4f0abc8b8eee => abcde
 8647f981-f503-4638-af23-7bb4a9e4b53f => abcde
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/session_auth.py
+File: `api/v1/auth/session_auth.py`
 
 ### 4. Session cookie
 
