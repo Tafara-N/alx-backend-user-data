@@ -504,11 +504,15 @@ In the file api/v1/views/__init__.py, you must add this new view at the end of t
 
 In the first terminal:
 
+```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/auth_session/login" -XGET
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>405 Method Not Allowed</title>
@@ -587,13 +591,14 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "updated_at": "2017-10-16 04:23:04"
 }
 bob@dylan:~$
+```
+
 Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/views/session_auth.py, api/v1/views/__init__.py
+File: `api/v1/views/session_auth.py, api/v1/views/__init__.py`
 
 ### 8. Logout
 
