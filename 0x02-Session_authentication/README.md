@@ -423,6 +423,7 @@ Now, you will be able to get a User based on his session ID.
 
 In the first terminal:
 
+```bash
 bob@dylan:~$ cat main_4.py
 #!/usr/bin/env python3
 """ Main 4
@@ -465,8 +466,11 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 User with ID: cf3ddee1-ff24-49e4-a40b-2540333fe992 has a Session ID: 9d1648aa-da79-4692-8236-5f9d7f9e9485
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/"
 No user found
 bob@dylan:~$
@@ -476,11 +480,12 @@ bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/" --cookie "_my_session_id=9d1648aa-da79-4692-8236-5f9d7f9e9485"
 User found: cf3ddee1-ff24-49e4-a40b-2540333fe992
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/session_auth.py
+File: `api/v1/auth/session_auth.py`
 
 ### 7. New view for Session Authentication
 
