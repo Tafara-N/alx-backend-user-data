@@ -54,8 +54,10 @@ Update method for the route GET /api/v1/users/<user_id> in api/v1/views/users.py
 If <user_id> is equal to me and request.current_user is None: abort(404)
 If <user_id> is equal to me and request.current_user is not None: return the authenticated User in a JSON response (like a normal case of GET /api/v1/users/<user_id> where <user_id> is a valid User ID)
 Otherwise, keep the same behavior
+
 In the first terminal:
 
+```bash
 bob@dylan:~$ cat main_0.py
 #!/usr/bin/env python3
 """ Main 0
@@ -85,8 +87,11 @@ bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
+```
+
 In a second terminal:
 
+```bash
 bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
 {
   "status": "OK"
@@ -119,11 +124,12 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" -H "Authorization: Basic
   "updated_at": "2017-09-25 01:55:17"
 }
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/app.py, api/v1/views/users.py
+File: `api/v1/app.py, api/v1/views/users.py`
 
 ### 1. Empty session
 
