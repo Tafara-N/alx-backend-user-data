@@ -411,14 +411,15 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/app.py
 
-6. Use Session ID for identifying a User
-mandatory
-Update SessionAuth class:
+### 6. Use Session ID for identifying a User
 
-Create an instance method def current_user(self, request=None): (overload) that returns a User instance based on a cookie value:
+Update `SessionAuth` class:
 
-You must use self.session_cookie(...) and self.user_id_for_session_id(...) to return the User ID based on the cookie _my_session_id
-By using this User ID, you will be able to retrieve a User instance from the database - you can use User.get(...) for retrieving a User from the database.
+Create an instance method `def current_user(self, request=None):` (overload) that returns a `User` instance based on a cookie value:
+
+- You must use `self.session_cookie(...)` and `self.user_id_for_session_id(...)` to return the User ID based on the cookie `_my_session_id`
+- By using this User ID, you will be able to retrieve a `User` instance from the database - you can use `User.get(...)` for retrieving a `User` from the database.
+
 Now, you will be able to get a User based on his session ID.
 
 In the first terminal:
