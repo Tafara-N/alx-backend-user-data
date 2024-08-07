@@ -170,21 +170,23 @@ GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
 File: api/v1/auth/session_auth.py, api/v1/app.py
 
-2. Create a session
-mandatory
-Update SessionAuth class:
+### 2. Create a session
 
-Create a class attribute user_id_by_session_id initialized by an empty dictionary
-Create an instance method def create_session(self, user_id: str = None) -> str: that creates a Session ID for a user_id:
-Return None if user_id is None
-Return None if user_id is not a string
-Otherwise:
-Generate a Session ID using uuid module and uuid4() like id in Base
-Use this Session ID as key of the dictionary user_id_by_session_id - the value for this key must be user_id
-Return the Session ID
-The same user_id can have multiple Session ID - indeed, the user_id is the value in the dictionary user_id_by_session_id
-Now you an “in-memory” Session ID storing. You will be able to retrieve an User id based on a Session ID.
+Update `SessionAuth` class:
 
+- Create a class attribute `user_id_by_session_id` initialized by an empty dictionary
+- Create an instance method `def create_session(self, user_id: str = None) -> str:` that creates a Session ID for a `user_id`:
+    - Return `None` if `user_id` is `None`
+    - Return `None` if `user_id` is not a string
+    - Otherwise:
+- Generate a Session ID using `uuid` module and `uuid4()` like `id` in `Base`
+- Use this Session ID as key of the dictionary `user_id_by_session_id` - the value for this key must be `user_id`
+- Return the Session ID
+- The same `user_id` can have multiple Session ID - indeed, the `user_id` is the value in the dictionary `user_id_by_session_id`
+
+Now you an “in-memory” Session ID storing. You will be able to retrieve an `User` id based on a Session ID.
+
+```bash
 bob@dylan:~$ cat  main_1.py
 #!/usr/bin/env python3
 """ Main 1
@@ -224,11 +226,12 @@ abcde => 61997a1b-3f8a-4b0f-87f6-19d5cafee63f: {'61997a1b-3f8a-4b0f-87f6-19d5caf
 fghij => 69e45c25-ec89-4563-86ab-bc192dcc3b4f: {'61997a1b-3f8a-4b0f-87f6-19d5cafee63f': 'abcde', '69e45c25-ec89-4563-86ab-bc192dcc3b4f': 'fghij'}
 abcde => 02079cb4-6847-48aa-924e-0514d82a43f4: {'61997a1b-3f8a-4b0f-87f6-19d5cafee63f': 'abcde', '02079cb4-6847-48aa-924e-0514d82a43f4': 'abcde', '69e45c25-ec89-4563-86ab-bc192dcc3b4f': 'fghij'}
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x02-Session_authentication
-File: api/v1/auth/session_auth.py
+File: `api/v1/auth/session_auth.py`
 
 ### 3. User ID for Session ID
 
