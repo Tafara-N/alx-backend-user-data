@@ -62,7 +62,7 @@ Now, you will add a new endpoint: `GET /users/me` to retrieve the authenticated 
     - If `<user_id>` is equal to `me` and `request.current_user` is not `None`: return the authenticated `User` in a JSON response (like a normal case of `GET /api/v1/users/<user_id>` where `<user_id>` is a valid `User` ID)
     - Otherwise, keep the same behavior
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ cat main_0.py
@@ -152,7 +152,7 @@ Update `api/v1/app.py` for using `SessionAuth` instance for the variable `auth` 
 
 Otherwise, keep the previous mechanism.
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth python3 -m api.v1.app
@@ -350,7 +350,7 @@ Update `api/v1/auth/auth.py` by adding the method `def session_cookie(self, requ
 - You must use `.get()` built-in for accessing the cookie in the request cookies dictionary
 - You must use the environment variable `SESSION_NAME` to define the name of the cookie used for the Session ID
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ cat main_3.py
@@ -407,7 +407,7 @@ Update the `@app.before_request` method in `api/v1/app.py`:
 - Add the URL path `/api/v1/auth_session/login/` in the list of excluded paths of the method `require_auth` - this route doesn’t exist yet but it should be accessible outside authentication
 - If `auth.authorization_header(request)` and `auth.session_cookie(request)` return `None`, `abort(401)`
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
@@ -460,7 +460,7 @@ Create an instance method `def current_user(self, request=None):` (overload) tha
 
 Now, you will be able to get a User based on his session ID.
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ cat main_4.py
@@ -547,7 +547,7 @@ In the file `api/v1/views/session_auth.py`, create a route `POST /auth_session/l
 
 In the file `api/v1/views/__init__.py`, you must add this new view at the end of the file.
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
@@ -662,7 +662,7 @@ Update the file `api/v1/views/session_auth.py`, by adding a new route `DELETE /a
     - If `destroy_session` returns `False`, `abort(404)`
     - Otherwise, return an empty JSON dictionary with the status code 200
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
@@ -772,7 +772,7 @@ Create a class `SessionExpAuth` that inherits from `SessionAuth` in the file `ap
 
 Update `api/v1/app.py` to instantiate auth with `SessionExpAuth` if the environment variable `AUTH_TYPE` is equal to `session_exp_auth`.
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_exp_auth SESSION_NAME=_my_session_id SESSION_DURATION=60 python3 -m api.v1.app
@@ -871,7 +871,7 @@ Create a new authentication class `SessionDBAuth` in `api/v1/auth/session_db_aut
 
 Update `api/v1/app.py` to instantiate `auth` with `SessionDBAuth` if the environment variable `AUTH_TYPE` is equal to `session_db_auth`.
 
-In the first terminal:
+**In the first terminal:**
 
 ```bash
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_db_auth SESSION_NAME=_my_session_id SESSION_DURATION=60 python3 -m api.v1.app
