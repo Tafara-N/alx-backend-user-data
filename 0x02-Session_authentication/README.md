@@ -500,7 +500,8 @@ You must use from api.v1.app import auth - WARNING: please import it only where 
 You must use auth.create_session(..) for creating a Session ID
 Return the dictionary representation of the User - you must use to_json() method from User
 You must set the cookie to the response - you must use the value of the environment variable SESSION_NAME as cookie name - tip
-In the file api/v1/views/__init__.py, you must add this new view at the end of the file.
+
+In the file `api/v1/views/__init__.py`, you must add this new view at the end of the file.
 
 In the first terminal:
 
