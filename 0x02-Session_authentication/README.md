@@ -706,12 +706,12 @@ Create a class `SessionExpAuth` that inherits from `SessionAuth` in the file `ap
         - The key `created_at` must be set to the current datetime - you must use `datetime.now()`
     - Return the Session ID created
 - Overload `def user_id_for_session_id(self, session_id=None):`
-- Return `None` if `session_id` is `None`
-- Return `None` if `user_id_by_session_id` doesn’t contain any key equals to `session_id`
-- Return the `user_id` key from the session dictionary if `self.session_duration` is equal or under 0
-- Return `None` if session dictionary doesn’t contain a key `created_at`
-- Return `None` if the `created_at` + `session_duration` seconds are before the current datetime. [datetime - timedelta](https://intranet.alxswe.com/rltoken/mwc3EnlWLNJ2rvzvgZT8eA)
-- Otherwise, return `user_id` from the session dictionary
+    - Return `None` if `session_id` is `None`
+    - Return `None` if `user_id_by_session_id` doesn’t contain any key equals to `session_id`
+    - Return the `user_id` key from the session dictionary if `self.session_duration` is equal or under 0
+    - Return `None` if session dictionary doesn’t contain a key `created_at`
+    - Return `None` if the `created_at` + `session_duration` seconds are before the current datetime. [datetime - timedelta](https://intranet.alxswe.com/rltoken/mwc3EnlWLNJ2rvzvgZT8eA)
+    - Otherwise, return `user_id` from the session dictionary
 
 Update `api/v1/app.py` to instantiate auth with `SessionExpAuth` if the environment variable `AUTH_TYPE` is equal to `session_exp_auth`.
 
