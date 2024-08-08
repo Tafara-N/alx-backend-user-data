@@ -17,7 +17,7 @@ def status() -> str:
         The status of the API
     """
 
-    return jsonify({"status": "OK"}) # type: ignore
+    return jsonify({"status": "OK"})  # type: ignore
 
 
 @app_views.route('/stats/', strict_slashes=False)
