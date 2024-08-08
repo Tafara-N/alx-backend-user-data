@@ -30,7 +30,7 @@ class User(Base):
         Getter of the password
         """
 
-        return self._password # type: ignore
+        return self._password  # type: ignore
 
     @password.setter
     def password(self, pwd: str):
