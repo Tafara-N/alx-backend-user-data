@@ -40,7 +40,7 @@ def unauthorized(error) -> str:
     """
     Unauthorized handler
     """
-    
+
     return jsonify({"error": "Unauthorized"}), 401
 
 
