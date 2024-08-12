@@ -343,22 +343,27 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-6. Basic Flask app
-mandatory
+### 6. Basic Flask app
+
 In this task, you will set up a basic Flask app.
 
-Create a Flask app that has a single GET route ("/") and use flask.jsonify to return a JSON payload of the form:
+Create a Flask app that has a single `GET` route (`"/"`) and use `flask.jsonify` to return a JSON payload of the form:
 
+```python
 {"message": "Bienvenue"}
+```
+
 Add the following code at the end of the module:
 
+```python
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5000")
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: app.py
+File: `app.py`
 
 7. Register user
 mandatory
