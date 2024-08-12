@@ -546,17 +546,21 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-11. Log in
-mandatory
-In this task, you will implement a login function to respond to the POST /sessions route.
+### 11. Log in
 
-The request is expected to contain form data with "email" and a "password" fields.
+In this task, you will implement a `login` function to respond to the `POST /sessions` route.
 
-If the login information is incorrect, use flask.abort to respond with a 401 HTTP status.
+The request is expected to contain form data with `"email"` and a `"password"` fields.
 
-Otherwise, create a new session for the user, store it the session ID as a cookie with key "session_id" on the response and return a JSON payload of the form
+If the login information is incorrect, use `flask.abort` to respond with a 401 HTTP status.
 
+Otherwise, create a new session for the user, store it the session ID as a cookie with key `"session_id"` on the response and return a JSON payload of the form
+
+```python
 {"email": "<user email>", "message": "logged in"}
+```
+
+```bash
 bob@dylan:~$ curl -XPOST localhost:5000/users -d 'email=bob@bob.com' -d 'password=mySuperPwd'
 {"email":"bob@bob.com","message":"user created"}
 bob@dylan:~$
@@ -610,14 +614,15 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 <p>The server could not verify that you are authorized to access the URL requested. You either supplied the wrong credentials (e.g. a bad password), or your browser doesn't understand how to supply the credentials required.</p>
 * Closing connection 0
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: app.py
+File: `app.py`
 
-12. Find user by session ID
-mandatory
+### 12. Find user by session ID
+
 In this task, you will implement the Auth.get_user_from_session_id method. It takes a single session_id string argument and returns the corresponding User or None.
 
 If the session ID is None or no user is found, return None. Otherwise return the corresponding user.
