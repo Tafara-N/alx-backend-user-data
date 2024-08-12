@@ -211,14 +211,15 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `db.py`
 
-3. update user
-mandatory
-In this task, you will implement the DB.update_user method that takes as argument a required user_id integer and arbitrary keyword arguments, and returns None.
+### 3. update user
 
-The method will use find_user_by to locate the user to update, then will update the user’s attributes as passed in the method’s arguments then commit changes to the database.
+In this task, you will implement the `DB.update_user` method that takes as argument a required `user_id` integer and arbitrary keyword arguments, and returns `None`.
 
-If an argument that does not correspond to a user attribute is passed, raise a ValueError.
+The method will use `find_user_by` to locate the user to update, then will update the user’s attributes as passed in the method’s arguments then commit changes to the database.
 
+If an argument that does not correspond to a user attribute is passed, raise a `ValueError`.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -249,11 +250,12 @@ bob@dylan:~$ python3 main.py
 1
 Password updated
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: db.py
+File: `db.py`
 
 4. Hash password
 mandatory
