@@ -37,10 +37,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ## Setup
 
-You will need to install `bcrypt`
+You will need to install `bcrypt`, `pycodestyle`, `sqlalchemy`, `mypy`
 
 ```bash
-pip3 install bcrypt
+pip3 install -r requirements.txt
+
 ```
 
 ## Tasks
