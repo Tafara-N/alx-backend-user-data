@@ -283,10 +283,11 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-5. Register user
-mandatory
-In this task, you will implement the Auth.register_user in the Auth class provided below:
+### 5. Register user
 
+In this task, you will implement the `Auth.register_user` in the `Auth` class provided below:
+
+```bash
 from db import DB
 
 
@@ -296,14 +297,17 @@ class Auth:
 
     def __init__(self):
         self._db = DB()
-Note that Auth._db is a private property and should NEVER be used from outside the class.
+```
 
-Auth.register_user should take mandatory email and password string arguments and return a User object.
+Note that `Auth._db` is a private property and should NEVER be used from outside the class.
 
-If a user already exist with the passed email, raise a ValueError with the message User <user's email> already exists.
+`Auth.register_user` should take mandatory `email` and `password` string arguments and return a `User` object.
 
-If not, hash the password with _hash_password, save the user to the database using self._db and return the User object.
+If a user already exist with the passed email, raise a `ValueError` with the message `User <user's email> already exists`.
 
+If not, hash the password with `_hash_password`, save the user to the database using `self._db` and return the `User` object.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -332,11 +336,12 @@ bob@dylan:~$ python3 main.py
 successfully created a new user!
 could not create a new user: User me@me.com already exists
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 6. Basic Flask app
 mandatory
