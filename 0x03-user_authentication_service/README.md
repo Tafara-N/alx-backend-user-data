@@ -257,12 +257,13 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `db.py`
 
-4. Hash password
-mandatory
-In this task you will define a _hash_password method that takes in a password string arguments and returns bytes.
+### 4. Hash password
 
-The returned bytes is a salted hash of the input password, hashed with bcrypt.hashpw.
+In this task you will define a `_hash_password` method that takes in a `password` string arguments and returns bytes.
 
+The returned bytes is a salted hash of the input password, hashed with `bcrypt.hashpw`.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -275,11 +276,12 @@ print(_hash_password("Hello Holberton"))
 bob@dylan:~$ python3 main.py
 b'$2b$12$eUDdeuBtrD41c8dXvzh95ehsWYCCAi4VH1JbESzgbgZT.eMMzi.G2'
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 5. Register user
 mandatory
