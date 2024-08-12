@@ -647,19 +647,18 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-14. Log out
-mandatory
-In this task, you will implement a logout function to respond to the DELETE /sessions route.
+### 14. Log out
 
-The request is expected to contain the session ID as a cookie with key "session_id".
+In this task, you will implement a `logout` function to respond to the `DELETE /sessions` route.
 
-Find the user with the requested session ID. If the user exists destroy the session and redirect the user to GET /. If the user does not exist, respond with a 403 HTTP status.
+The request is expected to contain the session ID as a cookie with key `"session_id"`.
+
+Find the user with the requested session ID. If the user exists destroy the session and redirect the user to `GET /`. If the user does not exist, respond with a 403 HTTP status.
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: app.py
+File: `app.py`
 
 15. User profile
 mandatory
