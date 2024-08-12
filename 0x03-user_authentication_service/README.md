@@ -510,14 +510,15 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-10. Get session ID
-mandatory
-In this task, you will implement the Auth.create_session method. It takes an email string argument and returns the session ID as a string.
+### 10. Get session ID
 
-The method should find the user corresponding to the email, generate a new UUID and store it in the database as the user’s session_id, then return the session ID.
+In this task, you will implement the `Auth.create_session` method. It takes an `email` string argument and returns the session ID as a string.
 
-Remember that only public methods of self._db can be used.
+The method should find the user corresponding to the email, generate a new UUID and store it in the database as the user’s `session_id`, then return the session ID.
 
+Remember that only public methods of `self._db` can be used.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -538,11 +539,12 @@ bob@dylan:~$ python3 main.py
 5a006849-343e-4a48-ba4e-bbd523fcca58
 None
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 11. Log in
 mandatory
