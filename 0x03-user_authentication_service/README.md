@@ -8,8 +8,9 @@ In the industry, you should not implement your own authentication system and use
 - [Flask documentation](https://intranet.alxswe.com/rltoken/lKExyvivrrW4eh0eI8UV6A)
 - [Requests module](https://intranet.alxswe.com/rltoken/py7LuuD1u2MUwcaf8wnDzQ)
 - [HTTP status codes](https://intranet.alxswe.com/rltoken/cj-mc5ZHp_KyXn1yikHC0A)
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+# Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/oAqmZmipBdjCcfI5QqyFXA), **without the help of Google:**
 
 How to declare API routes in a Flask app
 How to get and set cookies
