@@ -36,9 +36,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - Only public methods of `Auth` and `DB` should be used outside these classes
 
 ## Setup
-You will need to install bcrypt
 
+You will need to install `bcrypt`
+
+```bash
 pip3 install bcrypt
+```
+
 Tasks
 0. User model
 mandatory
