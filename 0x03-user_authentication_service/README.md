@@ -634,19 +634,18 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-13. Destroy session
-mandatory
-In this task, you will implement Auth.destroy_session. The method takes a single user_id integer argument and returns None.
+### 13. Destroy session
 
-The method updates the corresponding user’s session ID to None.
+In this task, you will implement `Auth.destroy_session`. The method takes a single `user_id` integer argument and returns `None`.
 
-Remember to only use public methods of self._db.
+The method updates the corresponding user’s session ID to `None`.
+
+Remember to only use public methods of `self._db`.
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 14. Log out
 mandatory
