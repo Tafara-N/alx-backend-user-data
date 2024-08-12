@@ -773,22 +773,24 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-19. Update password end-point
-mandatory
-In this task you will implement the update_password function in the app module to respond to the PUT /reset_password route.
+### 19. Update password end-point
 
-The request is expected to contain form data with fields "email", "reset_token" and "new_password".
+In this task you will implement the `update_password` function in the `app` module to respond to the `PUT /reset_password` route.
+
+The request is expected to contain form data with fields `"email"`, `"reset_token"` and `"new_password"`.
 
 Update the password. If the token is invalid, catch the exception and respond with a 403 HTTP code.
 
 If the token is valid, respond with a 200 HTTP code and the following JSON payload:
 
+```python
 {"email": "<user email>", "message": "Password updated"}
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: app.py
+File: `app.py`
 
 ### 20. End-to-end integration test
 
