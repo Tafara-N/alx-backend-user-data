@@ -12,12 +12,13 @@ In the industry, you should not implement your own authentication system and use
 # Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/oAqmZmipBdjCcfI5QqyFXA), **without the help of Google:**
 
-How to declare API routes in a Flask app
-How to get and set cookies
-How to retrieve request form data
-How to return various HTTP status codes
-Requirements
-Allowed editors: vi, vim, emacs
+- How to declare API routes in a Flask app
+- How to get and set cookies
+- How to retrieve request form data
+- How to return various HTTP status codes
+
+# Requirements
+- Allowed editors: `vi`, `vim`, `emacs`
 All your files will be interpreted/compiled on Ubuntu 18.04 LTS using python3 (version 3.7)
 All your files should end with a new line
 The first line of all your files should be exactly #!/usr/bin/env python3
