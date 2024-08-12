@@ -732,17 +732,16 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `app.py`
 
-16. Generate reset password token
-mandatory
-In this task, you will implement the Auth.get_reset_password_token method. It take an email string argument and returns a string.
+### 16. Generate reset password token
 
-Find the user corresponding to the email. If the user does not exist, raise a ValueError exception. If it exists, generate a UUID and update the user’s reset_token database field. Return the token.
+In this task, you will implement the `Auth.get_reset_password_token` method. It takes an `email` string argument and returns a string.
+
+Find the user corresponding to the email. If the user does not exist, raise a `ValueError` exception. If it exists, generate a UUID and update the user’s `reset_token` database field. Return the token.
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 17. Get reset password token
 mandatory
