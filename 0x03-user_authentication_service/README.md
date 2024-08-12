@@ -660,15 +660,19 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `app.py`
 
-15. User profile
-mandatory
-In this task, you will implement a profile function to respond to the GET /profile route.
+### 15. User profile
 
-The request is expected to contain a session_id cookie. Use it to find the user. If the user exist, respond with a 200 HTTP status and the following JSON payload:
+In this task, you will implement a `profile` function to respond to the `GET /profile` route.
 
+The request is expected to contain a `session_id` cookie. Use it to find the user. If the user exist, respond with a 200 HTTP status and the following JSON payload:
+
+```python
 {"email": "<user email>"}
+```
+
 If the session ID is invalid or the user does not exist, respond with a 403 HTTP status.
 
+```bash
 bob@dylan:~$ curl -XPOST localhost:5000/sessions -d 'email=bob@bob.com' -d 'password=mySuperPwd' -v
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying 127.0.0.1...
@@ -721,11 +725,12 @@ Note: Unnecessary use of -X or --request, GET is already inferred.
 * Closing connection 0
 
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: app.py
+File: `app.py`
 
 16. Generate reset password token
 mandatory
