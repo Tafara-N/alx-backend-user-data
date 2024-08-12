@@ -461,12 +461,13 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `app.py`
 
-8. Credentials validation
-mandatory
-In this task, you will implement the Auth.valid_login method. It should expect email and password required arguments and return a boolean.
+### 8. Credentials validation
 
-Try locating the user by email. If it exists, check the password with bcrypt.checkpw. If it matches return True. In any other case, return False.
+In this task, you will implement the `Auth.valid_login` method. It should expect `email` and `password` required arguments and return a boolean.
 
+Try locating the user by email. If it exists, check the password with `bcrypt.checkpw`. If it matches return `True`. In any other case, return `False`.
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -491,11 +492,12 @@ True
 False
 False
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 9. Generate UUIDs
 mandatory
