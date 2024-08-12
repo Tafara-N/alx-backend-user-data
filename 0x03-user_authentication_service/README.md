@@ -83,7 +83,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `user.py`
+- File: `user.py`
 
 ### 1. create user
 
@@ -153,7 +153,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `db.py`
+- File: `db.py`
 
 ### 2. Find user
 
@@ -209,7 +209,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `db.py`
+- File: `db.py`
 
 ### 3. update user
 
@@ -255,7 +255,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `db.py`
+- File: `db.py`
 
 ### 4. Hash password
 
@@ -281,7 +281,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 5. Register user
 
@@ -341,7 +341,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 6. Basic Flask app
 
@@ -363,7 +363,7 @@ if __name__ == "__main__":
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 7. Register user
 
@@ -459,7 +459,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 8. Credentials validation
 
@@ -497,7 +497,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 9. Generate UUIDs
 
@@ -508,7 +508,7 @@ Note that the method is private to the auth module and should **NOT** be used ou
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 10. Get session ID
 
@@ -544,7 +544,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 11. Log in
 
@@ -619,7 +619,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 12. Find user by session ID
 
@@ -632,7 +632,7 @@ Remember to only use public methods of `self._db`.
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 13. Destroy session
 
@@ -645,7 +645,7 @@ Remember to only use public methods of `self._db`.
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 14. Log out
 
@@ -658,7 +658,7 @@ Find the user with the requested session ID. If the user exists destroy the sess
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 15. User profile
 
@@ -730,7 +730,7 @@ bob@dylan:~$
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 16. Generate reset password token
 
@@ -741,7 +741,7 @@ Find the user corresponding to the email. If the user does not exist, raise a `V
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 17. Get reset password token
 
@@ -758,7 +758,7 @@ If the email is not registered, respond with a 403 status code. Otherwise, gener
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 18. Update password
 
@@ -771,7 +771,7 @@ Otherwise, hash the password and update the user’s `hashed_password` field wit
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `auth.py`
+- File: `auth.py`
 
 ### 19. Update password end-point
 
@@ -790,7 +790,7 @@ If the token is valid, respond with a 200 HTTP code and the following JSON paylo
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `app.py`
+- File: `app.py`
 
 ### 20. End-to-end integration test
 
@@ -833,4 +833,4 @@ Run `python main.py`. If everything is correct, you should see no output.
 **Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
-File: `main.py`
+- File: `main.py`
