@@ -80,7 +80,7 @@ users.reset_token: VARCHAR(250)
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `user.py`
@@ -150,7 +150,7 @@ bob@dylan:~$ python3 main.py
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `db.py`
@@ -206,7 +206,7 @@ Invalid
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `db.py`
@@ -252,7 +252,7 @@ Password updated
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `db.py`
@@ -278,7 +278,7 @@ b'$2b$12$eUDdeuBtrD41c8dXvzh95ehsWYCCAi4VH1JbESzgbgZT.eMMzi.G2'
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -338,7 +338,7 @@ could not create a new user: User me@me.com already exists
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -360,7 +360,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5000")
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -456,7 +456,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -494,7 +494,7 @@ False
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -505,7 +505,7 @@ In this task you will implement a `_generate_uuid` function in the `auth` module
 
 Note that the method is private to the auth module and should **NOT** be used outside of it.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -541,7 +541,7 @@ None
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -616,7 +616,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -629,7 +629,7 @@ If the session ID is `None` or no user is found, return `None`. Otherwise return
 
 Remember to only use public methods of `self._db`.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -642,7 +642,7 @@ The method updates the corresponding user’s session ID to `None`.
 
 Remember to only use public methods of `self._db`.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -655,7 +655,7 @@ The request is expected to contain the session ID as a cookie with key `"session
 
 Find the user with the requested session ID. If the user exists destroy the session and redirect the user to `GET /`. If the user does not exist, respond with a 403 HTTP status.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -727,7 +727,7 @@ Note: Unnecessary use of -X or --request, GET is already inferred.
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -738,7 +738,7 @@ In this task, you will implement the `Auth.get_reset_password_token` method. It 
 
 Find the user corresponding to the email. If the user does not exist, raise a `ValueError` exception. If it exists, generate a UUID and update the user’s `reset_token` database field. Return the token.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -755,7 +755,7 @@ If the email is not registered, respond with a 403 status code. Otherwise, gener
 {"email": "<user email>", "reset_token": "<reset token>"}
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -768,7 +768,7 @@ Use the `reset_token` to find the corresponding user. If it does not exist, rais
 
 Otherwise, hash the password and update the user’s `hashed_password` field with the new hashed password and the `reset_token` field to `None`.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `auth.py`
@@ -787,7 +787,7 @@ If the token is valid, respond with a 200 HTTP code and the following JSON paylo
 {"email": "<user email>", "message": "Password updated"}
 ```
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `app.py`
@@ -830,7 +830,7 @@ if __name__ == "__main__":
 
 Run `python main.py`. If everything is correct, you should see no output.
 
-Repo:
+**Repo:**
 - GitHub repository: `alx-backend-user-data`
 - Directory: `0x03-user_authentication_service`
 File: `main.py`
