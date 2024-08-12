@@ -499,17 +499,16 @@ GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
 File: `auth.py`
 
-9. Generate UUIDs
-mandatory
-In this task you will implement a _generate_uuid function in the auth module. The function should return a string representation of a new UUID. Use the uuid module.
+### 9. Generate UUIDs
 
-Note that the method is private to the auth module and should NOT be used outside of it.
+In this task you will implement a `_generate_uuid` function in the `auth` module. The function should return a string representation of a new UUID. Use the `uuid` module.
+
+Note that the method is private to the auth module and should **NOT** be used outside of it.
 
 Repo:
-
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: auth.py
+File: `auth.py`
 
 10. Get session ID
 mandatory
