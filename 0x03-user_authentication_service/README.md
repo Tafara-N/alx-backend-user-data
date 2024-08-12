@@ -43,18 +43,21 @@ You will need to install `bcrypt`
 pip3 install bcrypt
 ```
 
-Tasks
-0. User model
-mandatory
-In this task you will create a SQLAlchemy model named User for a database table named users (by using the mapping declaration of SQLAlchemy).
+## Tasks
+
+### 0. User model
+
+In this task you will create a SQLAlchemy model named `User` for a database table named `users` (by using the [mapping declaration](https://intranet.alxswe.com/rltoken/-a69l-rGqoFdXnnu6qfKdA) of SQLAlchemy).
 
 The model will have the following attributes:
 
-id, the integer primary key
-email, a non-nullable string
-hashed_password, a non-nullable string
-session_id, a nullable string
-reset_token, a nullable string
+- `id`, the integer primary key
+- `email`, a non-nullable string
+- `hashed_password`, a non-nullable string
+- `session_id`, a nullable string
+- `reset_token`, a nullable string
+
+```bash
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
@@ -75,11 +78,12 @@ users.hashed_password: VARCHAR(250)
 users.session_id: VARCHAR(250)
 users.reset_token: VARCHAR(250)
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-backend-user-data
 Directory: 0x03-user_authentication_service
-File: user.py
+File: `user.py`
 
 1. create user
 mandatory
