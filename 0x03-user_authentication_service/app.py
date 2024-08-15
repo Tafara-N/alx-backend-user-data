@@ -147,7 +147,10 @@ def update_password() -> str:
     Updating the user's password
 
     Return
-        A JSON payload: {"email": "<user email>", "message": "Password updated"}
+        A JSON payload: {
+            "email": "<user email>",
+            "message": "Password updated"
+            }
     """
 
     email = request.form.get("email")
