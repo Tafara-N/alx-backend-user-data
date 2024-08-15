@@ -9,6 +9,9 @@ from uuid import uuid4
 from typing import Union
 from sqlalchemy.orm.exc import NoResultFound
 
+from db import DB
+from user import User
+
 
 def _hash_password(password: str) -> str:
     """
@@ -32,3 +35,12 @@ def _generate_uuid() -> str:
     """
 
     return str(uuid4())
+
+
+class Auth:
+    """
+    Auth class to interact with the authentication database.
+    """
+
+    def __init__(self):
+        self._db = DB()
