@@ -58,3 +58,39 @@ class Auth:
 
         else:
             raise ValueError(f'User {email} already exists')
+
+    def valid_login(self, email: str, password: str) -> bool:
+        """
+        Validate a user login
+
+        Return
+            True if the password is valid, False otherwise
+        """
+
+        try:
+            user = self._db.find_user_by(email=email)
+            return bcrypt.checkpw(
+                password.encode('utf-8'),
+                user.hashed_password.encode('utf-8')
+                )
+
+        except NoResultFound:
+            return False
+
+    def create_session(self, email: str) -> str:
+        """
+        Creates a session and saves it in the database
+
+        Return
+            The session ID
+        """
+
+        try:
+            user = self._db.find_user_by(email=email)
+        except NoResultFound:
+            return None
+
+        session_id = _generate_uuid()
+        self._db.update_user(user.id, session_id=session_id)
+
+        return session_id
