@@ -44,13 +44,10 @@ class DB:
         Saving a new user to the database
         """
 
-        try:
-            user = User(email=email, hashed_password=hashed_password)
-            self._session.add(user)
-            self._session.commit()
-            self._session.rollback()
-        except Exception:
-            user = None
+        user = User(email=email, hashed_password=hashed_password)
+        self._session.add(user)
+        self._session.commit()
+
         return user
 
     def find_user_by(self, **kwargs) -> User:
