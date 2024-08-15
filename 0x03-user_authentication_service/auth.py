@@ -4,12 +4,14 @@
 User authentication service
 """
 
+import bcrypt
+
 from typing import Union
 from uuid import uuid4
 
-import bcrypt
-from db import DB
 from sqlalchemy.orm.exc import NoResultFound
+
+from db import DB
 from user import User
 
 
@@ -38,8 +40,7 @@ def _generate_uuid() -> str:
 
 
 class Auth:
-    """
-    Auth class to interact with the authentication database.
+    """Auth class to interact with the authentication database.
     """
 
     def __init__(self):
