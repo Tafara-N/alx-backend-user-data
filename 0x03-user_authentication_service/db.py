@@ -4,7 +4,7 @@
 DB module
 """
 
-from sqlalchemy import create_engine, tuple_
+from sqlalchemy import create_engine
 from sqlalchemy.exc import InvalidRequestError
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -59,21 +59,15 @@ class DB:
             input arguments
         """
 
-        keys, values = [], []
+        try:
+            user = self._session.query(User).filter_by(**kwargs).first()
+        except TypeError:
+            raise InvalidRequestError
 
-        for key, value in kwargs.items():
-            if hasattr(User, key):
-                keys.append(getattr(User, key))
-                values.append(value)
-            else:
-                raise InvalidRequestError()
+        if not user:
+            raise NoResultFound
 
-        result = self._session.query(User).filter(
-            tuple_(*keys).in_([tuple(values)])
-        ).first()
-        if result is None:
-            raise NoResultFound()
-        return result
+        return user
 
     def update_user(self, user_id: int, **kwargs) -> None:
         """
