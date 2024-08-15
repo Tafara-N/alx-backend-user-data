@@ -71,6 +71,7 @@ class DB:
                 values.append(value)
             else:
                 raise InvalidRequestError()
+
         result = self._session.query(User).filter(
             tuple_(*keys).in_([tuple(values)])
         ).first()
