@@ -7,7 +7,6 @@ JSON payload
 
 from flask import Flask, jsonify
 
-
 app = Flask(__name__)
 
 
