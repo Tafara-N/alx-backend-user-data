@@ -4,12 +4,12 @@
 User authentication service
 """
 
-import bcrypt
-from uuid import uuid4
 from typing import Union
-from sqlalchemy.orm.exc import NoResultFound
+from uuid import uuid4
 
+import bcrypt
 from db import DB
+from sqlalchemy.orm.exc import NoResultFound
 from user import User
 
 
