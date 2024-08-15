@@ -49,7 +49,7 @@ class DB:
             self._session.add(user)
             self._session.commit()
             self._session.rollback()
-        except InvalidRequestError:
+        except Exception:
             user = None
         return user
 
