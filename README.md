@@ -55,7 +55,7 @@ In this project, you will learn what the authentication process means and implem
 
 In the industry, you should **not** implement your own Basic authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://intranet.alxswe.com/rltoken/rpsPy0M3_FJuCLGNPUbmvg)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
-![Authentication Failed! You shall not pass!](authentication.png)
+![Authentication Failed! You shall not pass!](https://github.com/Tafara-N/alx-backend-user-data/blob/main/0x01-Basic_authentication/authentication.png)
 
 # Resources
 
