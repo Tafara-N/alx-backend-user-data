@@ -134,7 +134,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 4. # User Authentication Service
 
-![Changed password](incorrect_password.jpg)
+![Changed password](https://github.com/Tafara-N/alx-backend-user-data/blob/main/0x03-user_authentication_service/incorrect_password.jpg)
 
 In the industry, you should not implement your own authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-User](https://intranet.alxswe.com/rltoken/9nVfotMI_1zpEzihMzBeTA)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
