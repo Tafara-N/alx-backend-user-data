@@ -6,7 +6,7 @@
 ___
 
 - [Basic Authentication](0x01-Basic_authentication/README.md)
-- []()
+- [Session Authentication](0x02-Session_authentication/README.md)
 - []()
 - []()
 ___
