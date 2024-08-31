@@ -44,7 +44,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ### 0. Simple-basic-API
 
-Download and start your project from this [archive.zip](https://intranet.alxswe.com/rltoken/2o4gAozNufil_KjoxKI5bA)
+Download and start your project from this [archive.zip]()
 
 In this archive, you will find a simple API with one model: `User`. Storage of these users is done via a serialization/deserialization in files.
 
@@ -103,7 +103,7 @@ Edit `api/v1/app.py` :
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
 
 - Route: `GET /api/v1/unauthorized`
-- This endpoint must raise a `401` error by using `abort` - [Custom Error Page](https://intranet.alxswe.com/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
+- This endpoint must raise a `401` error by using `abort` - [Custom Error Page](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
 
 By calling `abort(401)` , the error handler for 401 will be executed.
 
@@ -165,7 +165,7 @@ Edit `api/v1/app.py` :
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py :`
 
 - Route: `GET /api/v1/forbidden`
-- This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://intranet.alxswe.com/rltoken/RH0gY_XQuSB75Q-JbI-fdg)
+- This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
 
 By calling `abort(403)` , the error handler for 403 will be executed.
 
