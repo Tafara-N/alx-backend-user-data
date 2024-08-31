@@ -41,7 +41,6 @@ You will need to install `bcrypt`, `mypy`, `pycodestyle`, `sqlalchemy`
 
 ```bash
 pip3 install -r requirements.txt
-
 ```
 
 ## Tasks
