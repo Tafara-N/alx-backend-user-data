@@ -3,13 +3,13 @@
 # Resources
 
 **Read or watch:**
-- [What Is PII, non-PII, and Personal Data?](https://intranet.alxswe.com/rltoken/jf71oYqiETchcVhPzQVnyg)
-- [logging documentation](https://intranet.alxswe.com/rltoken/W2JiHD6cbJY1scJORyLqnw)
-- [bcrypt package](https://intranet.alxswe.com/rltoken/41oaQXfzwnF1i-wT8W0vHw)
-- [Logging to Files, Setting Levels, and Formatting](https://intranet.alxswe.com/rltoken/XCpI9uvguxlTCsAeRCW6SA)
+- [What Is PII, non-PII, and Personal Data?](https://piwik.pro/blog/what-is-pii-personal-data/)
+- [logging documentation](https://docs.python.org/3/library/logging.html)
+- [bcrypt package](https://github.com/pyca/bcrypt/)
+- [Logging to Files, Setting Levels, and Formatting](https://www.youtube.com/watch?v=-ARI4Cz-awo)
 
 # Learning Objectives
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/yiowzem5NkzxawDmImXy8Q), **without the help of Google:**
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/) **without the help of Google:**
 
 - Examples of Personally Identifiable Information (PII)
 - How to implement a log filter that will obfuscate PII fields
@@ -130,7 +130,7 @@ bob@dylan:~$
 
 ### 2. Create logger
 
-Use [user_data.csv](https://intranet.alxswe.com/rltoken/cVQXXtttuAobcFjYFKZTow) for this task
+Use [user_data.csv](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2019/11/a2e00974ce6b41460425.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240831%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240831T145234Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=33a8e8adeef025ae9b288895defe460b7df2af95d5bf15a33605069c90295eaf) for this task
 
 Implement a `get_logger` function that takes no arguments and returns a `logging.Logger` object.
 
@@ -140,8 +140,8 @@ Create a tuple `PII_FIELDS` constant at the root of the module containing the fi
 
 **Tips:**
 
-- [What Is PII, non-PII, and personal data?](https://intranet.alxswe.com/rltoken/jf71oYqiETchcVhPzQVnyg)
-- [Uncovering Password Habits](https://intranet.alxswe.com/rltoken/74q9SbCrKPfvBmpFZnyZxg)
+- [What Is PII, non-PII, and personal data?](https://piwik.pro/blog/what-is-pii-personal-data/)
+- [Uncovering Password Habits](https://www.digitalguardian.com/blog/uncovering-password-habits-are-users%E2%80%99-password-security-habits-improving-infographic)
 
 ```bash
 bob@dylan:~$ cat main.py
