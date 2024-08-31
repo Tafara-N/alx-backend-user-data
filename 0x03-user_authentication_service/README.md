@@ -1,16 +1,16 @@
 ![Changed password](incorrect_password.jpg)
 
-In the industry, you should not implement your own authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-User](https://intranet.alxswe.com/rltoken/9nVfotMI_1zpEzihMzBeTA)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should not implement your own authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-User](https://flask-user.readthedocs.io/en/latest/)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
 # Resources
 
 **Read or watch:**
-- [Flask documentation](https://intranet.alxswe.com/rltoken/lKExyvivrrW4eh0eI8UV6A)
-- [Requests module](https://intranet.alxswe.com/rltoken/py7LuuD1u2MUwcaf8wnDzQ)
-- [HTTP status codes](https://intranet.alxswe.com/rltoken/cj-mc5ZHp_KyXn1yikHC0A)
+- [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+- [Requests module](https://requests.kennethreitz.org/en/latest/user/quickstart/)
+- [HTTP status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 
 # Learning Objectives
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/oAqmZmipBdjCcfI5QqyFXA), **without the help of Google:**
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google:**
 
 - How to declare API routes in a Flask app
 - How to get and set cookies
@@ -48,7 +48,7 @@ pip3 install -r requirements.txt
 
 ### 0. User model
 
-In this task you will create a SQLAlchemy model named `User` for a database table named `users` (by using the [mapping declaration](https://intranet.alxswe.com/rltoken/-a69l-rGqoFdXnnu6qfKdA) of SQLAlchemy).
+In this task you will create a SQLAlchemy model named `User` for a database table named `users` (by using the [mapping declaration](https://docs.sqlalchemy.org/en/13/orm/tutorial.html#declare-a-mapping) of SQLAlchemy).
 
 The model will have the following attributes:
 
