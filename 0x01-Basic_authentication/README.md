@@ -44,7 +44,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ### 0. Simple-basic-API
 
-Download and start your project from this [archive.zip]()
+Download and start your project from this [archive.zip](dumps/archive.zip)
 
 In this archive, you will find a simple API with one model: `User`. Storage of these users is done via a serialization/deserialization in files.
 
@@ -311,7 +311,7 @@ Update the file api/v1/app.py :
         - import `Auth` from `api.v1.auth.auth`
         - create an instance of `Auth` and assign it to the variable `auth`
 
-Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://intranet.alxswe.com/rltoken/kzBrJT9aaokbD6aWYyQzXg)
+Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Blueprint.before_request)
 
 - Add a method in `api/v1/app.py` to handler `before_request`
     - if `auth` is `None` , do nothing
